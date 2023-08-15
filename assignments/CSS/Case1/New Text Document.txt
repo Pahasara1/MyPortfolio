@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positions_ Absolute Positions</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <style>
+        main>div:nth-child(1){
+            background-color: red;
+            width: 500px;
+            height: 500px;
+        }
+        main>div:nth-child(2){
+            background-color: green;
+            width: 500px;
+            height: 500px;
+            position:absolute;
+            left: 210px;
+            top: 8px
+        }
+        main>div:nth-child(3){
+            background-color: orange;
+            width: 500px;
+            height: 500px;
+        }
+        main>div:nth-child(4){
+            background-color: pink;
+           width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 210px;
+            top: 208px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+</body>
+</html>
