@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case02</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        main{
+            position: relative;
+        }
+        body>header>div{
+            width: 200px;
+            margin-left: 20px;
+        }
+        header>nav{
+            display: inline-block;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: 10px;
+        }
+        header>nav>menu>li{
+            display: inline-block;
+            margin: 0 0 0 40px;
+        }
+        header>nav>menu>li>a{
+            text-decoration: none;
+            font-weight: 700px;
+            font-size: 20px;
+            color: black;
+        }
+
+        main>section:nth-child(2)>section:first-child{
+            display: flex;
+            padding-top: 10px;
+            padding-right: 10px;
+            margin-left: 20px;
+        }
+        main>section:nth-child(2)>section>div{
+            display: inline-block;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        main>section:first-child{
+            font-size: 16px;
+            background: darkslateblue;
+            width: 20%;
+            height: 100%;
+            position: absolute;
+        }
+        main>section:first-child>ul{
+            font-size: 1em;
+        }
+        main>section:nth-child(2){
+            position: relative;
+            width: 80%;
+            height: 20%;
+            border-top: 5px solid black;
+            margin: auto;
+            margin-right: 0;
+        }
+        main>section:nth-child(2)>section:nth-child(2){
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-bottom: 10px;
+            padding-top: 05px;
+            padding-right: 05px;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        body>main>section:nth-child(2)>section>div>img {
+             border-top: 2px solid red;
+            border-bottom: 2px solid green;
+            width: 100%;
+        }
+
+        body>main>section:nth-child(2)>section>div:nth-child(1)>img {
+            border-left: 2px solid red;
+        }
+        body>main>section:nth-child(2)>section>div:nth-child(2)>img {
+            border-left: 2px solid green;
+        }
+        body>main>section:nth-child(2)>section>div:nth-child(3)>img {
+            border-left: 2px solid green;
+            border-right: 2px solid red;
+        }
+
+
+        .bullet{
+            list-style: none;
+            -webkit-text-fill-color: whitesmoke;
+            position: absolute;
+            top: 0;
+            line-height: 3;
+        }
+        .nav{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+       
+        footer{
+            width: 100%;
+            height: 6vh;
+            position: relative;
+            background-color: gray;
+            font-size: 16px;
+            -webkit-text-fill-color: white;
+        }
+        footer>h5{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img width="200px" src="assets/ijse.png" alt="IJSE Logo">
+        </div>
+        <nav>
+            <menu>
+                <li><a href="" class="nav-link">Home</a></li>
+                <li><a href="" class="nav-link">Service</a></li>
+                <li><a href="" class="nav-link">Contact</a></li>
+                <li><a href="" class="nav-link">About Us</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <ul class="bullet">
+                <li><a href="" class="nav">Home</a></li>
+                <li><a href="" class="nav">Service</a></li>
+                <li><a href="" class="nav">Contact</a></li>
+                <li><a href="" class="nav">About Us</a></li>
+            </ul>
+        </section>
+        <section>
+            <section>
+                <div>
+                    <img src="assets/monkey-swinging.gif" alt="">
+                </div>
+                <div>
+                    <img src="assets/monkey-swinging.gif" alt="">
+                </div>
+                <div>
+                    <img src="assets/monkey-swinging.gif" alt="">
+                </div>
+            </section>
+
+            <section>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae consequatur totam,
+                    architecto fugiat velit iure odio fuga, ad perspiciatis quidem illum saepe voluptates dolorum
+                    exercitationem. Voluptatem provident porro libero?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae consequatur totam,
+                    architecto fugiat velit iure odio fuga, ad perspiciatis quidem illum saepe voluptates dolorum
+                    exercitationem. Voluptatem provident porro libero?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae consequatur totam,
+                    architecto fugiat velit iure odio fuga, ad perspiciatis quidem illum saepe voluptates dolorum
+                    exercitationem. Voluptatem provident porro libero?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae consequatur totam,
+                    architecto fugiat velit iure odio fuga, ad perspiciatis quidem illum saepe voluptates dolorum
+                    exercitationem. Voluptatem provident porro libero?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae consequatur totam,
+                    architecto fugiat velit iure odio fuga, ad perspiciatis quidem illum saepe voluptates dolorum
+                    exercitationem. Voluptatem provident porro libero?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae consequatur totam,
+                    architecto fugiat velit iure odio fuga, ad perspiciatis quidem illum saepe voluptates dolorum
+                    exercitationem. Voluptatem provident porro libero?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae consequatur totam,
+                    architecto fugiat velit iure odio fuga, ad perspiciatis quidem illum saepe voluptates dolorum
+                    exercitationem. Voluptatem provident porro libero?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae consequatur totam,
+                    architecto fugiat velit iure odio fuga, ad perspiciatis quidem illum saepe voluptates dolorum
+                    exercitationem. Voluptatem provident porro libero?</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h5>Developed By IJSE</h5>
+    </footer>
+</body>
+</html>
