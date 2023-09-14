@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 1</title>
+  <link rel="stylesheet" href="/Assignment/normalize.css">
+
+  <style>
+
+    section{
+      position: relative;
+    }
+
+    div{
+      transition: 2s;
+      height: 50px;
+      width: 400px;
+      background-color: purple;
+      margin: 10px;
+      text-align: center;
+      justify-content: center;
+      position: absolute;
+      padding-top: 1px;
+      box-shadow: purple 0px 4px 12px;
+    }
+
+    div>h7{
+      color: white;
+    }
+
+    div>img{
+      width: 10%;
+      position: absolute;
+      right: 10px;
+      padding-top: 2px;
+    }
+
+    div:nth-child(1){
+      top: 10px;
+      left: -350px;
+    }
+
+    div:nth-child(2){
+      top: 100px;
+      left: -350px;
+    }
+
+    div:nth-child(3){
+      top: 200px;
+      left: -350px;
+    }
+
+    div:nth-child(4){
+      top: 300px;
+      left: -350px;
+    }
+
+    div:nth-child(5){
+      top: 400px;
+      left: -350px;
+    }
+
+    div:hover{
+      left: -100px;
+      transition: 2s;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <section>
+
+    <div><h7>Menu One</h7><img src="assets/download.png"></div>
+    <div><h7>Menu Two</h7><img src="assets/download.png"></div>
+    <div><h7>Menu Three</h7><img src="assets/download.png"></div>
+    <div><h7>Menu Four</h7><img src="assets/download.png"></div>
+    <div><h7>Menu Five</h7><img src="assets/download.png"></div>
+
+  </section>
+
+</body>
+
+</html>
