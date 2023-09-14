@@ -16,48 +16,660 @@ the modern Professional Softwares">
 <meta name="author" content="Hasith">
 <meta name="robots" content="index, follow">
 
+<style>
+    header {
+        height: 70px;
+        width: 97vw;
+        border-radius: 10px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        box-shadow: 1px 2px 9px 1px #000000;
+        z-index: 15;
+        background: rgb(0, 0, 0);
+    }
+
+    header > nav > ul > li {
+        display: inline-block;
+        padding: 10px;
+        margin-left: 100px;
+    }
+
+    header> nav> ul> li > a{
+        text-decoration: none;
+        font-size: 18px;
+        color: hsl(0, 0%, 100%);
+    }
+
+    main {
+        position: relative;
+        top: 100px;
+        z-index: 3;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+   
+    main>section:nth-child(1)>div:nth-child(1){
+        position: sticky;
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+        top: 0;
+    }
+    
+     main > section:nth-child(1)> div:nth-child(1) > h1 {
+        color: #000000;;
+        padding: 20px;
+    }
+    main>section:nth-child(1){
+        width: 1313px;
+        height: 580px;
+        background-color: #3f3f3f;
+    }
+    main>section:nth-child(1)>aside{
+        display: inline-block;
+        position: relative;
+        width: 30vw;
+        height: 400px;
+        left: 60vw;
+        bottom: 10vh;
+    }
+    main>section:nth-child(1)>aside>div{
+        position: relative;
+        display: inline-block;
+        bottom: 50px;
+    }
+    main>section:nth-child(1)>:nth-child(6){
+        position: relative;
+        display: inline-block;
+        bottom: 250px;
+        right: 350px;
+    }
+    main>section:nth-child(1)>hgroup>h1{
+        position: relative;
+        display: inline-block;
+        margin-bottom: 0px;
+        left: 65px;
+        font-size: 60px;
+    }
+    main>section:nth-child(1)>hgroup>h2{
+        position: relative;
+        display: inline-block;
+        margin-top: 0;
+        top: 75px;
+        right: 80px;
+        font-size: 60px;
+    }
+    main>section:nth-child(1)>:last-child{
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        right: 670px;
+        bottom: 165px;
+        background-color: yellow;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+    main>section:nth-child(2)>div:nth-child(1){
+        position: sticky;
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+        top: 0;
+    }
+     main>section:nth-child(2)>div:nth-child(1)>h1{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+    }
+    main>section:nth-child(2){
+        width: 1313px;
+        height: 600px;
+        background: url("../../WorkZone/MyPortfolio/assets/1554244010.jpeg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    main>section:nth-child(2)>div:nth-child(2)>div{
+        display: inline-block;
+        position: relative;
+        top: 50px;
+        left: 90px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(2){
+        display: inline-block;
+        position: relative;
+        width: 40vw;
+        height: 500px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(3){
+        display: inline-block;
+        position: relative;
+        left: 10px;
+        bottom: 100px;
+    }
+
+    main>section:nth-child(2)>div:nth-child(4){
+        display: inline-block;
+        position: relative;
+        width: 150px;
+        height: 50px;
+        background-color: white;
+        border: 2px solid red;
+        right: 200px;
+        top: 0px;
+        }
+     main>section:nth-child(2)>div:nth-child(5){
+        display: inline-block;
+        position: relative;
+        width: 150px;
+        height: 50px;
+        background-color: white;
+        border: 2px solid red;
+        left: 560px;
+        bottom: 195px;
+    }
+     main>section:nth-child(2)>div:nth-child(5)>h1{
+        position: relative;
+        display: inline-block;
+        bottom: 9px;
+    }
+     main>section:nth-child(2)>div:nth-child(4)>h1{
+        position: relative;
+        display: inline-block;
+        bottom: 9px;
+    }
+    main>section:nth-child(2)>:last-child{
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        bottom: 400px;
+        left: 450px;
+    }
+    main>section:nth-child(2)>:last-child>h1{
+        font-size: 80px;
+        display: inline-block;
+        position: relative;
+        bottom: 100px;   
+    }
+
+
+
+
+
+
+
+
+
+
+    main>section:nth-child(3){
+        width: 1313px;
+        height: 590px;
+        background-color: #3f3f3f;
+    }
+
+    main>section:nth-child(3)>div:nth-child(1){
+         position: sticky;
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+        top: 0;
+    }
+
+     main>section:nth-child(3)>div:nth-child(1)>h1{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+    }
+
+    main>section:nth-child(3)>div:nth-child(2){
+        width: 1313px;
+        height: 50vh;
+        background: url("../../WorkZone/MyPortfolio/assets/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2JsYWNrLXNjcmVlbi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIxMjAwIn19fQ==.webp");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    main>section:nth-child(3)>section>aside>div:nth-child(1){
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 400px;
+        left: 15px;
+        bottom: 240px;
+        border: 2px solid black;
+        background-color: white
+    }
+     main>section:nth-child(3)>section>aside>div:nth-child(2){
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 400px;
+        left: 200px;
+        bottom: 240px;
+        border: 2px solid black;
+        background-color: white
+    }
+     main>section:nth-child(3)>section>aside>div:nth-child(3){
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 400px;
+        left: 380px;
+        bottom: 240px;
+        border: 2px solid black;
+        background-color: white
+    }
+
+
+
+
+
+
+
+
+    main>section:nth-child(4){
+        background: url("../../WorkZone/MyPortfolio/assets/wp11224017.webp");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;        
+        width: 1313px;
+        height: 580px;
+    }
+    main>section:nth-child(4)>div:nth-child(1){
+      position: sticky;
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+        top: 0;  
+    }
+    main>section:nth-child(4)>div:nth-child(1)>h1{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+    }
+    main>section:nth-child(4)>section>div{
+        display: inline-block;
+        position: relative;
+        bottom: 90px;
+        left: 250px;
+        right: 48px;
+        left: 230px;
+    }
+    main>section:nth-child(4)>div:nth-child(2){
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+        border: 2px solid red;
+        top: 182px;
+        left: 35px;
+    }
+    main>section:nth-child(4)>div:nth-child(3){
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+        border: 2px solid red;
+        left: 965px;
+        top: 182px;
+    }
+    main>section:nth-child(4)>div:nth-child(4){
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        right: 280px;
+        top: 357px;
+        bottom: 0px;
+        border: 2px solid red;
+        background-color: white;
+      
+    }
+     main>section:nth-child(4)>div:nth-child(4)>h1{
+        position: relative;
+        display: inline-block;
+        left: 20px;
+       font-size: 20px;
+    }
+    main>section:nth-child(4)>div:nth-child(5){
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        left: 650px;
+        border: 2px solid red;
+        top: 357px;
+        bottom: 0px; 
+        background-color: white;
+    }
+    main>section:nth-child(4)>div:nth-child(5)>h1{
+        position: relative;
+        display: inline-block;
+        left: 2px;
+        font-size: 20px;
+    }
+
+   
+
+
+
+
+
+    main>section:nth-child(5)>:nth-child(1){
+        position: sticky;
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+        top: 0;  
+    }
+    main>section:nth-child(5)>:nth-child(1)>h1{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+    }
+    main>section:nth-child(5){
+        background: url("../../WorkZone/MyPortfolio/assets/862ba5a6-8421-4a06-8011-6c9d109eff5e.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        width: 1313px;
+        height: 600px;
+    }
+
+    main>section:nth-child(5)>aside>div:nth-child(1){
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 350px;
+        top: 95px;
+        left: 65px;
+        border: 2px solid red;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(2){
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        top: 110px;
+        left: 186px;
+        border: 2px solid red;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(3){
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        top: 125px;
+        left: 210px;
+        border: 2px solid red;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(4){
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        bottom: 109px;
+        right: 229px;
+        border: 2px solid red;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(5){
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        bottom: 109px;
+        right: 206px;
+        border: 2px solid red;
+    }
+    main>section:nth-child(5)>aside{
+        height:600px
+    }
+    main>section:nth-child(5)>aside>div:nth-child(6){
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 350px;
+        top: 60px;
+        right: 13px;
+        border: 2px solid red;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(6)>div{
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        left: 25px;
+        top: 50px;
+        background-color: gray;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(6)>div>h1{
+        position: relative;
+        display: inline-block;
+        left: 25px;
+        bottom: 5px
+    }
+    main>section:nth-child(5)>aside>div:nth-child(6)>p{
+        position: relative;
+        display: inline-block;
+        top: 50px;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(7){
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        left: 540px;
+        bottom: 850px;
+        background-color: rgb(107, 107, 107);
+    }
+    main>section:nth-child(5)>aside>div:nth-child(7)>h1{
+        position: relative;
+        display: inline-block;
+        left: 35px;
+        bottom: 4px;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(8){
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        left: 900px;
+        bottom: 850px;
+        background-color: rgb(107, 107, 107);
+    }
+    main>section:nth-child(5)>aside>div:nth-child(8)>h1{
+        position: relative;
+        display: inline-block;
+        left: 45px;
+        bottom: 4px;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(9){
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 500px;
+        left: 625px;
+        bottom: 385px;
+        background-color: black;
+    }
+    
+
+
+
+
+
+
+
+    main>section:nth-child(6)>:nth-child(1)>h1{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+    }
+    main>section:nth-child(6)>:nth-child(1){
+        position: sticky;
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+        top: 0;
+    }
+    main>section:nth-child(6){
+        background: url("../../WorkZone/MyPortfolio/assets/white-notebook-black-data-firewall-scaled.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        width: 1313px;
+        height: 600px;
+    }
+
+    main>section:nth-child(6)>section>section>aside>div{
+       position: relative;
+       display: inline-block;
+       width: 830px;
+       height: 100px;
+       left: 250px;
+       top: 80px;
+       border: 2px solid red;
+    }
+    main>section:nth-child(6)>section>section>p{
+       position: relative;
+       display: inline-block;
+       top: 200px;
+       left: 432px;
+    }
+
+
+
+
+
+
+    main>section:nth-child(7){
+        background: url("../../WorkZone/MyPortfolio/assets/istockphoto-1343057693-612x612.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        width: 1313px;
+        height: 600px;
+    }
+    main>section:nth-child(7)>div:nth-child(1){
+        position: sticky;
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+        top: 0;
+    }
+    main>section:nth-child(7)>div:nth-child(1)>h1{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+    }
+
+    
+   
+</style>
+
 <body>
     <header>
-        <nav></nav>
-    </header>
-    <main>
-        <section>
-            <menu>
-                <li><a href="Home>">Home</a></li>
+        <nav>
+            <ul>
+                <li><a href="#Home>">Home</a></li>
                 <li><a href="About Me">About me</a></li>
                 <li><a href="Services">Services</a></li>
                 <li><a href="My Projects/Assignments">My Projects & Assignments </a></li>
                 <li><a href="Skills">Skills</a></li>
                 <li><a href="Gallery">Gallery</a></li>
-            </menu>
-            
-        <section>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+           
+        <section id="home">
+            <div>
+                <h1>Home</h1>
+            </div>
+            <div></div>
+            <div></div>
             <hgroup>
                 <h1>Work</h1>
                 <h2>AnyWhere</h2>
             </hgroup>
-            <section>
+            
                 <aside>
                     <div>
-                        <img width= "200" src="assets/WhatsApp Image 2023-06-22 at 8.21.15 PM.jpeg" alt="images">
+                        <img width= "350" src="assets/WhatsApp Image 2023-06-22 at 8.21.15 PM.jpeg" alt="images">
                     </div>
                 </aside>
-            </section>
-            <article>
-                <wbr>
+            
+                <div>
                 <p>
                     I’m <b>Hasith </b>Pahasara Mahagama. i’m FrontEnd<br> Developer.<br>I developed for a new  generation<br> specifically for 
-the modern Proffesional <mark> Softwares</mark><br>
+the modern Proffesional  Softwares<br>
                 </p>
-                <wbr>
-            </article>
-            <section>
-                <a href="Hire Me">Hire Me</a>
-            </section>
+                </div>
+                <div>
+                    <center>
+                        <a style="position:relative; display:inline-block" href="Hire Me">Hire Me</a>
+                    </center>
+                </div>
         </section>
 
-        
+        <section id="">
+            <div>
+                <h1>About Me</h1>
+            </div>
+            <div>
+            <div>
+                <img width= "350" src="assets/WhatsApp Image 2023-06-22 at 8.21.15 PM (1).jpeg" alt="images">
+            </div>
+            </div>
+           
+            <div>
+                <p>
+                <br>Welcome to my personal website. I'm Hasith Pahasara, a professional full stack developer <br>from Sri Lanka. With a strong commitment to<br> excellence, I bring a unique blend of creativity, analytical thinking, and attention to <br>detail to every project. Explore my portfolio and witness<br> the transformative power of technology in<br> creating impactful experiences. Let's <br>collaborate and bring your ideas to life.
+                </p>
+            </div>
+            <div>
+                 <h1>Download CV</h1>
+            </div>
+            <div>
+                 <h1>Qualifications</h1>
+            </div>
+            <div>
+                <h1>HI</h1>
+            </div>
+        </section>
+
+
         <section>
+            <div>
+                <h1>Services</h1>
+            </div>
+            <div></div>
             <section>
                 <aside>
                     <div>
@@ -96,42 +708,32 @@ the modern Proffesional <mark> Softwares</mark><br>
             </section>
         </section>
 
+        
+
         <section>
+            <div>
+                <h1>My Projects & Assignments</h1>
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+                <h1>Assignments</h1>
+            </div>
+            <div>
+                <h1>Another Projects</h1>
+            </div>
             <section>
-                <div></div>
-            </section>
-            
-            <section>
-                <section>
-                    <div>
-                        <img width="200" src="assets/WhatsApp Image 2023-06-22 at 8.21.15 PM (1).jpeg" alt="image 2">
+                    <div>      
+                        <img width="850" height="450" src="assets/DashBoard.PNG" alt="DashboardPNG">   
                     </div>
-                </section>
-                <h3>
-                        HI
-                </h3>
-                <p>
-                    <wbr>
-                    <br>Welcome to my personal website. I'm Hasith Pahasara,<br> a professional full stack developer <br>from Sri Lanka. With a strong commitment to<br> excellence, I bring a unique blend of creativity<br>, analytical thinking, and attention to <br>detail to every project. Explore my portfolio and witness<br> the transformative power of technology in<br> creating impactful experiences. Let's <br>collaborate and bring your ideas to life.
-                    <wbr>
-            <li><a href="Download CV">Download CV</a></li>   
-            <li><a href="Qualifications">Qualifications</a></li>     
-                </p>
             </section>
         </section>
 
-        <section>
-            <section>
-                <aside>
-                    <div>
-                        <center>
-                        <img width="900" height="550" src="assets/DashBoard.PNG" alt="DashboardPNG">
-                        </center>
-                    </div>
-                </aside>
-            </section>
 
             <section>
+                <div>
+                    <h1>Qualifications</h1>
+                </div>
                 <aside>
                     <div>
                         <p>
@@ -174,15 +776,27 @@ the modern Proffesional <mark> Softwares</mark><br>
                         <p>
                             I’m good chess Player.I <br>have many Victories.I <br>have 10 Years<br> experience in this <br>game.
                         </p>
+                        <div>
+                            <h1>Certificates</h1>
+                        </div>
                         <p>
                             You can see all <br>Victories, Please<br> Click the<br> Certificates Button<br> and See more
                         </p>
                     </div>   
+                    <div>
+                        <h1>Education</h1>
+                    </div>
+                    <div>
+                        <h1>Sports</h1>
+                    </div>
+                    <div></div>
                 </aside>
             </section>        
-        </section>
 
         <section>
+            <div>
+                <h1>Skills</h1>
+            </div>
             <section>
                 <article>
                     <p></p>
@@ -190,7 +804,6 @@ the modern Proffesional <mark> Softwares</mark><br>
                 <section>
                     <aside>
                         <div>
-                            <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.40 PM.jpeg" alt="skill photo">
                             <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.41 PM.jpeg" alt="Skill photo">
                             <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.42 PM.jpeg" alt="Skill photo">
                             <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.43 PM (1).jpeg" alt="Skill Photo">
@@ -209,6 +822,9 @@ the modern Proffesional <mark> Softwares</mark><br>
         </section>
         
         <section>
+            <div>
+                <h1>Gallery</h1>
+            </div>
             <section>
                 <aside>
                     <div>
