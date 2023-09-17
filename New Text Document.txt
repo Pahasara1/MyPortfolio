@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width user-scalable=no initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Certificates</title>
+  <style>
+    section{
+        width: 100vw;
+        height: 100vh;
+        background: url("../../WorkZone/MyPortfolio/assets/dark-diploma-certificate-creative-design-vector-14301396.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    section>section{
+        position: relative;
+        display: inline-block;
+        width: 80vw;
+        height: 80vh;
+        background: white;
+        left: 10%;
+        top: 10%;
+        border: 2px solid black;
+      display: grid;
+      grid-template-rows: repeat(1,1fr);
+      grid-template-columns: repeat(2,1fr);
+    }
+    section>section>div{
+      border: 3px solid black;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<section>
+    <section>
+         <div></div>
+         <div></div>
+    </section>
+</section>
+
+</body>
+</html>

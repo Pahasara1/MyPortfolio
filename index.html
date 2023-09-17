@@ -21,6 +21,10 @@ the modern Professional Softwares">
     body{
         overflow-x: hidden;
     }
+    body>section{
+        position: relative;
+        left: 10px;
+    }
     header {
         height: 70px;
         width: 100vw;
@@ -35,28 +39,31 @@ the modern Professional Softwares">
     }
 
     header > nav > ul > li {
+        position: relative;
         display: inline-block;
         padding: 10px;
-        margin-left: 100px;
+        left: 35vw;
+        margin-left: 2%;
     }
 
     header> nav> ul> li > a{
         text-decoration: none;
         font-size: 18px;
         color: hsl(0, 0%, 100%);
+        font-family: 'Courier New', Courier, monospace;
     }
 
     main {
         position: relative;
         top: 100px;
         z-index: 3;
-        padding-left: 10px;
+        padding-left: 0px;
         padding-right: 10px;
     }
    
     main>section:nth-child(1)>div:nth-child(1){
         position: sticky;
-        display: block;
+        display: absolute;
         height: 10vh;
         width: 100%;
         background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
@@ -65,13 +72,17 @@ the modern Professional Softwares">
     
      main > section:nth-child(1)> div:nth-child(1) > h1 {
         color: #000000;;
-        padding: 20px;
+
+        display: inline-block;
+        position: relative;
+        left: 40px;
     }
     main>section:nth-child(1){
-       
         width: 100vw;
-        height: 100vh;
-        background-color: #3f3f3f;
+        background: url("../../WorkZone/MyPortfolio/assets/Capture3.PNG");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
     }
     main>section:nth-child(1)>aside{
         display: inline-block;
@@ -81,11 +92,21 @@ the modern Professional Softwares">
         left: 60vw;
         bottom: 10vh;
     }
-    main>section:nth-child(1)>aside>div{
-        position: relative;
-        display: inline-block;
-        bottom: 50px;
+    main>section:nth-child(1)>:nth-child(5)>div{
+      width: 300px;
+      height: 300px;
+      background:linear-gradient(rgb(44, 44, 44), rgb(255, 255, 255));
+      border-radius: 100%;
+      border: solid 10px rgb(51, 51, 51);
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
     }
+    
     main>section:nth-child(1)>:nth-child(6){
         position: relative;
         display: inline-block;
@@ -110,11 +131,23 @@ the modern Professional Softwares">
     main>section:nth-child(1)>:last-child{
         position: relative;
         display: inline-block;
-        width: 100px;
-        height: 30px;
+        width: 150px;
+        height: 50px;
         right: 670px;
         bottom: 165px;
-        background-color: yellow;
+        background-color: rgb(117, 117, 117);
+    }
+    main>section:nth-child(1)>:last-child>a{
+        position: relative;
+        font-size: 30px;
+        text-decoration: none;
+        text-align: center;
+         color: rgb(0, 14, 75);
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        top: 20%;
+        bottom: 0%;
+        left: 20%;
+
     }
 
 
@@ -138,12 +171,12 @@ the modern Professional Softwares">
      main>section:nth-child(2)>div:nth-child(1)>h1{
         display: inline-block;
         position: relative;
-        left: 15px;
+        left: 40px;
     }
     main>section:nth-child(2){
-        
+        position: relative;
+        display: inline-block;
         width: 100vw;
-        height: 100vh;
         background: url("../../WorkZone/MyPortfolio/assets/1554244010.jpeg");
         background-attachment: fixed;
         background-size: cover;
@@ -156,7 +189,26 @@ the modern Professional Softwares">
         top: 50px;
         left: 90px;
     }
+    main>section:nth-child(2)>div:nth-child(2)>div{
+      width: 300px;
+      height: 300px;
+      background:linear-gradient(rgb(44, 44, 44), rgb(255, 255, 255));
+      border-radius: 100%;
+      border: solid 10px rgb(0, 0, 0);
 
+      border-top-color: red;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+    main>section:nth-child(2)>div:nth-child(2)>div:hover{
+        transform: rotate(360deg);
+        transition-duration: 5s;
+    }
     main>section:nth-child(2)>div:nth-child(2){
         display: inline-block;
         position: relative;
@@ -170,26 +222,51 @@ the modern Professional Softwares">
         left: 10px;
         bottom: 100px;
     }
+    main>section:nth-child(2)>div:nth-child(3)>p{
+       color: white;
+    }
 
     main>section:nth-child(2)>div:nth-child(4){
         display: inline-block;
         position: relative;
         width: 150px;
         height: 50px;
-        background-color: white;
-        border: 2px solid red;
+        background-color: rgb(117, 117, 117);
         right: 200px;
-        top: 0px;
+        bottom: 27px;
+        
         }
+    main>section:nth-child(2)>div:nth-child(4)>a{
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(0, 14, 75);
+         top: 20%;
+         bottom: 0px;
+         left: 4%;
+         margin: auto;
+         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
      main>section:nth-child(2)>div:nth-child(5){
         display: inline-block;
         position: relative;
         width: 150px;
         height: 50px;
-        background-color: white;
-        border: 2px solid red;
+        background-color: rgb(117, 117, 117);
         left: 560px;
-        bottom: 182px;
+        bottom: 178px;
+    }
+    main>section:nth-child(2)>div:nth-child(5)>a{
+        text-decoration: none;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(0, 14, 75);
+         top: 20%;
+         bottom: 0px;
+         left: 3%;
+         margin: auto;
+         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
      main>section:nth-child(2)>div:nth-child(5)>h1{
         position: relative;
@@ -245,14 +322,13 @@ the modern Professional Softwares">
      main>section:nth-child(3)>div:nth-child(1)>h1{
         display: inline-block;
         position: relative;
-        left: 15px;
+        left: 40px;
     }
 
     main>section:nth-child(3)>div:nth-child(2){
         position: relative;
         display: inline-block;
-        right: 10px;
-        right: 10px;
+        right: 0px;
         width: 100vw;
         height: 50vh;
         background: url("../../WorkZone/MyPortfolio/assets/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2JsYWNrLXNjcmVlbi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIxMjAwIn19fQ==.webp");
@@ -266,20 +342,41 @@ the modern Professional Softwares">
         position: relative;
         width: 300px;
         height: 400px;
-        left: 15px;
+        left: 50px;
         bottom: 240px;
         border: 2px solid black;
         background-color: white
+    }
+     
+    main>section:nth-child(3)>section>aside>div:nth-child(1)>h1{
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    main>section:nth-child(3)>section>aside>div:nth-child(1)>p{
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
     }
      main>section:nth-child(3)>section>aside>div:nth-child(2){
         display: inline-block;
         position: relative;
         width: 300px;
         height: 400px;
-        left: 200px;
-        bottom: 240px;
+        left: 222px;
+        bottom: 218px;
         border: 2px solid black;
         background-color: white
+    }
+    main>section:nth-child(3)>section>aside>div:nth-child(2)>h1{
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    main>section:nth-child(3)>section>aside>div:nth-child(2)>p{
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
     }
      main>section:nth-child(3)>section>aside>div:nth-child(3){
         display: inline-block;
@@ -287,10 +384,21 @@ the modern Professional Softwares">
         width: 300px;
         height: 400px;
         left: 380px;
-        bottom: 240px;
+        bottom: 250px;
         border: 2px solid black;
         background-color: white
     }
+main>section:nth-child(3)>section>aside>div:nth-child(3)>h1{
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    main>section:nth-child(3)>section>aside>div:nth-child(3)>p{
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+
 
 
 
@@ -319,7 +427,7 @@ the modern Professional Softwares">
     main>section:nth-child(4)>div:nth-child(1)>h1{
         display: inline-block;
         position: relative;
-        left: 15px;
+        left: 40px;
     }
     main>section:nth-child(4)>section>div{
         display: inline-block;
@@ -356,14 +464,18 @@ the modern Professional Softwares">
         top: 357px;
         bottom: 0px;
         border: 2px solid red;
-        background-color: white;
-      
+        background-color: white;      
     }
-     main>section:nth-child(4)>div:nth-child(4)>h1{
+     main>section:nth-child(4)>div:nth-child(4)>a{
         position: relative;
         display: inline-block;
         left: 20px;
        font-size: 20px;
+       text-decoration: none;
+       top: 25%;
+       bottom: 0px;
+       margin: auto;
+       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     main>section:nth-child(4)>div:nth-child(5){
         position: relative;
@@ -376,11 +488,18 @@ the modern Professional Softwares">
         bottom: 0px; 
         background-color: white;
     }
-    main>section:nth-child(4)>div:nth-child(5)>h1{
+    main>section:nth-child(4)>div:nth-child(5)>a{
         position: relative;
         display: inline-block;
         left: 2px;
         font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+        top: 25%;
+        bottom: 0px;
+        left:5%;
+        margin: auto;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
    
@@ -389,7 +508,7 @@ the modern Professional Softwares">
 
 
 
-    main>section:nth-child(5)>:nth-child(1){
+    main>section:nth-child(5)>div:nth-child(1){
         position: sticky;
         display: block;
         height: 10vh;
@@ -397,10 +516,10 @@ the modern Professional Softwares">
         background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
         top: 0;  
     }
-    main>section:nth-child(5)>:nth-child(1)>h1{
+    main>section:nth-child(5)>div:nth-child(1)>h1{
         display: inline-block;
         position: relative;
-        left: 15px;
+        left: 40px;
     }
     main>section:nth-child(5){
         
@@ -420,6 +539,16 @@ the modern Professional Softwares">
         top: 95px;
         left: 65px;
         border: 2px solid red;
+        background-color: black;
+        border-radius: 5%;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(1)>h1{
+        text-align: center;
+        color: white;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(1)>p{
+        color: white;
+        text-align: center;
     }
     main>section:nth-child(5)>aside>div:nth-child(2){
         display: inline-block;
@@ -429,6 +558,16 @@ the modern Professional Softwares">
         top: 110px;
         left: 186px;
         border: 2px solid red;
+        background-color: black;
+        border-radius: 5%;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(2)>h3{
+        text-align: center;
+        color: white;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(2)>p{
+        color: white;
+        text-align: center;
     }
     main>section:nth-child(5)>aside>div:nth-child(3){
         display: inline-block;
@@ -438,6 +577,16 @@ the modern Professional Softwares">
         top: 125px;
         left: 210px;
         border: 2px solid red;
+        background-color: black;
+        border-radius: 5%;
+    }
+     main>section:nth-child(5)>aside>div:nth-child(3)>h3{
+        text-align: center;
+        color: white;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(3)>p{
+        color: white;
+        text-align: center;
     }
     main>section:nth-child(5)>aside>div:nth-child(4){
         display: inline-block;
@@ -447,6 +596,16 @@ the modern Professional Softwares">
         bottom: 109px;
         right: 229px;
         border: 2px solid red;
+        background-color: black;
+        border-radius: 5%;
+    }
+     main>section:nth-child(5)>aside>div:nth-child(4)>h3{
+        text-align: center;
+        color: white;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(4)>p{
+        color: white;
+        text-align: center;
     }
     main>section:nth-child(5)>aside>div:nth-child(5){
         position: relative;
@@ -456,6 +615,16 @@ the modern Professional Softwares">
         bottom: 109px;
         right: 206px;
         border: 2px solid red;
+        border-radius: 5%;
+        background-color:black;
+    }
+     main>section:nth-child(5)>aside>div:nth-child(5)>h3{
+        text-align: center;
+        color: white;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(5)>p{
+        color: white;
+        text-align: center;
     }
     main>section:nth-child(5)>aside{
         height:600px
@@ -468,21 +637,34 @@ the modern Professional Softwares">
         top: 60px;
         right: 13px;
         border: 2px solid red;
+        background-color: #000000;
+        border-radius: 5%;
+        text-align: center;
+    }
+     main>section:nth-child(5)>aside>div:nth-child(6)>h3{
+        text-align: center;
+        color: white;
+    }
+    main>section:nth-child(5)>aside>div:nth-child(6)>p{
+        color: white;
+        text-align: center;
     }
     main>section:nth-child(5)>aside>div:nth-child(6)>div{
         position: relative;
         display: inline-block;
         width: 150px;
         height: 50px;
-        left: 25px;
         top: 50px;
         background-color: gray;
     }
-    main>section:nth-child(5)>aside>div:nth-child(6)>div>h1{
+    main>section:nth-child(5)>aside>div:nth-child(6)>div>a{
+        text-decoration: none;
+        top: 20%;
+        bottom: 0;
+        margin: auto;
         position: relative;
         display: inline-block;
         font-size: 25px;
-        left: 15px;
         bottom: 5px
     }
     main>section:nth-child(5)>aside>div:nth-child(6)>p{
@@ -539,10 +721,10 @@ the modern Professional Softwares">
 
 
 
-    main>section:nth-child(6)>:nth-child(1)>h1{
+    main>section:nth-child(6)>div:nth-child(1)>h1{
         display: inline-block;
         position: relative;
-        left: 15px;
+        left: 40px;
     }
     main>section:nth-child(6)>:nth-child(1){
         position: sticky;
@@ -562,20 +744,25 @@ the modern Professional Softwares">
         height: 100vh;
     }
 
-    main>section:nth-child(6)>section>section>aside>div{
-       position: relative;
-       display: inline-block;
-       width: 830px;
-       height: 100px;
-       left: 250px;
-       top: 80px;
-       border: 2px solid red;
-    }
+   
     main>section:nth-child(6)>section>section>p{
        position: relative;
        display: inline-block;
-       top: 200px;
-       left: 432px;
+       top: 10%;
+       left: 35vw;
+    }
+    main>section:nth-child(6)>section>section>p{
+        color: white;
+    }
+
+    main>section:nth-child(6)>section>section{
+        position: relative;
+        width: 80%;
+        height: 10%;
+      display: grid;
+      grid-template-rows: repeat(1,1fr);
+      grid-template-columns: repeat(8,1fr);
+      left: 10%;
     }
 
 
@@ -602,8 +789,131 @@ the modern Professional Softwares">
     main>section:nth-child(7)>div:nth-child(1)>h1{
         display: inline-block;
         position: relative;
-        left: 15px;
+        left: 40px;
     }
+
+    main>section:nth-child(7)>section{
+        width: 90%;
+        height: 80%;
+        position: relative;
+        top: 5%;
+        left: 4%;
+        background: white;
+        border: 2px solid black;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+    }
+    main>section:nth-child(7)>section>div{
+        border: 2px solid black;
+    }
+
+
+
+
+
+
+
+
+    main>section:nth-child(8){
+         background: url("../../WorkZone/MyPortfolio/assets/Capture.PNG");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    main>section:nth-child(8)>div:nth-child(1){
+        position: sticky;
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+        top: 0;
+    }
+    main>section:nth-child(8)>div:nth-child(1)>h1{
+        display: inline-block;
+        position: relative;
+        left: 40px;
+    }
+    main>section:nth-child(8)>section>article>p{
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #000000;  
+        left: 40%;;
+    }
+    main>section:nth-child(8)>section>address{
+        position: relative;
+        display: inline-block;
+        top: 20%;
+    }
+    main>section:nth-child(8)>section>address>p:nth-child(1){
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        top: 10%;
+        left: 20%;
+    }
+    main>section:nth-child(8)>section>address>h1{
+        top: 146px;
+        position: absolute;
+        margin-left: 13px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        bottom: 0;
+        margin: auto;
+        margin-left: 35px;
+        font-size: 20px;
+    }
+    main:nth-child(8)>section>aside>form>h1{
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        left: 20%;
+    }
+
+    main>section:nth-child(8)>section>aside>form>:nth-child(2){
+        position: relative;
+        display: inline-block;
+        left: 40%;
+    }
+    main>section:nth-child(8)>section>aside>form>:nth-child(3){
+        position: relative;
+        display: inline-block;
+        left: 40%;
+    }
+    main>section:nth-child(8)>section>aside>form>:nth-child(4){
+        position: relative;
+        display: inline-block;
+        left: 40%;
+    }
+    main>section:nth-child(8)>div:nth-child(2){
+        position: relative;
+        display: inline-block;
+    }
+    main>section:nth-child(8)>section>aside>:last-child{
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        background-color: rgb(117, 117, 117);
+        left: 50%;
+    }
+
+    main>section:nth-child(8)>section>aside>:last-child>a{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        top: 30%;
+        left: 25%;
+        color: rgb(0, 14, 75);
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
 
     
    
@@ -614,11 +924,11 @@ the modern Professional Softwares">
         <nav>
             <ul>
                 <li><a href="#Home>">Home</a></li>
-                <li><a href="About Me">About me</a></li>
-                <li><a href="Services">Services</a></li>
-                <li><a href="My Projects/Assignments">My Projects & Assignments </a></li>
-                <li><a href="Skills">Skills</a></li>
-                <li><a href="Gallery">Gallery</a></li>
+                <li><a href="#About Me">About me</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#My Projects/Assignments">My Projects & Assignments </a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -638,7 +948,7 @@ the modern Professional Softwares">
             
                 <aside>
                     <div>
-                        <img width= "350" src="assets/WhatsApp Image 2023-06-22 at 8.21.15 PM.jpeg" alt="images">
+                        
                     </div>
                 </aside>
             
@@ -649,19 +959,19 @@ the modern Proffesional  Softwares<br>
                 </p>
                 </div>
                 <div>
-                    <center>
-                        <a style="position:relative; display:inline-block" href="Hire Me">Hire Me</a>
-                    </center>
+                   
+                        <a  href="#Contact me">Hire Me</a>
+                    
                 </div>
         </section>
 
-        <section id="">
+        <section id="About Me">
             <div>
                 <h1>About Me</h1>
             </div>
             <div>
             <div>
-                <img width= "350" src="assets/WhatsApp Image 2023-06-22 at 8.21.15 PM (1).jpeg" alt="images">
+
             </div>
             </div>
            
@@ -671,10 +981,10 @@ the modern Proffesional  Softwares<br>
                 </p>
             </div>
             <div>
-                 <h1>Download CV</h1>
+                 <a style="position:relative; display:inline-block" href="Download CV">Download CV</a>
             </div>
             <div>
-                 <h1>Qualifications</h1>
+                 <a style="position:relative; display:inline-block" href="#Qualifications">Qualifications</a>
             </div>
             <div>
                 <h1>HI</h1>
@@ -682,7 +992,7 @@ the modern Proffesional  Softwares<br>
         </section>
 
 
-        <section>
+        <section id="Services">
             <div>
                 <h1>Services</h1>
             </div>
@@ -690,9 +1000,9 @@ the modern Proffesional  Softwares<br>
             <section>
                 <aside>
                     <div>
-                        <h3>
-                            <li><a href="Dekstop And Mobile Application Development">Dekstop And Mobile Application Development</a></li>
-                        </h3>
+                        <h1>
+                            <li><a style="color: rgb(207, 142, 0);" href="Dekstop And Mobile Application Development">Dekstop And Mobile Application Development</a></li>
+                        </h1>
                         <p>
                             <wbr>
                             
@@ -702,9 +1012,9 @@ the modern Proffesional  Softwares<br>
                         </p>
                     </div>
                     <div>
-                        <h3>
-                            <li><a href="Web Application Development">Web Application Development</a></li>
-                        </h3>
+                        <h1>
+                            <li><a style="color: rgb(207, 142, 0);" href="Web Application Development">Web Application Development</a></li>
+                        </h1>
                         <p>
                             <wbr>
                             <br>With a strong command in<br> web application <br>development, I bring a <br>blend of creativity,<br> functionality, and user-centric<br> design to every <br>project. From <br>conceptualization to <br>execution, I deliver<br> exceptional web <br>applications that elevate<br> user experiences and fuel<br> business growth.<br>
@@ -712,9 +1022,9 @@ the modern Proffesional  Softwares<br>
                         </p>
                     </div>
                     <div>
-                        <h3>
-                            <li><a href="Freelancing">Freelancing</a></li>
-                        </h3>
+                        <h1>
+                            <li><a style="color: rgb(207, 142, 0);" href="Freelancing">Freelancing</a></li>
+                        </h1>
                         <p>
                             <wbr>
                             <br>As a skilled freelancer, I<br> bring a blend of creativity,<br> expertise, and a user-centric<br> approach to every<br> project. From start to<br> finish, I deliver exceptional<br> results that enhance user <br>experiences and drive<br> business growth. With a <br>focus on quality and client<br> satisfaction, I provide <br>valuable solutions that <br>meet and exceed expectations.<br>
@@ -727,17 +1037,17 @@ the modern Proffesional  Softwares<br>
 
         
 
-        <section>
+        <section id="My Projects/Assignments">
             <div>
                 <h1>My Projects & Assignments</h1>
             </div>
             <div></div>
             <div></div>
             <div>
-                <h1>Assignments</h1>
+                <a style="position:relative; display:inline-block" href="Assignments">Assignments</a>
             </div>
             <div>
-                <h1>Another Projects</h1>
+                <a style="position:relative; display:inline-block" href="Another Projects">Another Projects</a>
             </div>
             <section>
                     <div>      
@@ -747,7 +1057,7 @@ the modern Proffesional  Softwares<br>
         </section>
 
 
-            <section>
+            <section id="Qualifications">
                 <div>
                     <h1>Qualifications</h1>
                 </div>
@@ -794,7 +1104,7 @@ the modern Proffesional  Softwares<br>
                             I’m good chess Player.I <br>have many Victories.I <br>have 10 Years<br> experience in this <br>game.
                         </p>
                         <div>
-                            <h1>Certificates</h1>
+                            <a  href="Certificates">Certificates</a>
                         </div>
                         <p>
                             You can see all <br>Victories, Please<br> Click the<br> Certificates Button<br> and See more
@@ -810,7 +1120,7 @@ the modern Proffesional  Softwares<br>
                 </aside>
             </section>        
 
-        <section>
+        <section id="Skills">
             <div>
                 <h1>Skills</h1>
             </div>
@@ -819,18 +1129,16 @@ the modern Proffesional  Softwares<br>
                     <p></p>
                 </article>
                 <section>
-                    <aside>
                         <div>
                             <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.41 PM.jpeg" alt="Skill photo">
-                            <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.42 PM.jpeg" alt="Skill photo">
-                            <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.43 PM (1).jpeg" alt="Skill Photo">
-                            <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.43 PM (2).jpeg" alt="Skill photo">
-                            <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.43 PM.jpeg" alt="Skill photo">
-                            <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.46 PM.jpeg" alt="skill photo">
-                            <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.55 PM (1).jpeg" alt="skill photo">
-                            <img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.55 PM.jpeg" alt="skill photo">
                         </div>
-                    </aside>
+                        <div><img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.42 PM.jpeg" alt="Skill photo"></div>
+                        <div><img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.46 PM.jpeg" alt="Skill photo"></div>
+                        <div><img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.43 PM.jpeg" alt="Skill photo"></div>
+                        <div><img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.55 PM (1).jpeg" alt="Skill photo"></div>
+                        <div><img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.55 PM.jpeg" alt="Skill photo"></div>
+                        <div><img width="100" src="assets/WhatsApp Image 2023-07-20 at 3.58.43 PM (1).jpeg" alt="Skill photo"></div>
+                        <div><img width="100" src="assets/ps.jpeg" alt="Skill photo"></div>
                     <p>
                         <br>I'm skilled in Java, CSS, HTML, JavaScript, Figma, and React. With <br>expertise in Java, I develop versatile applications, while my proficiency<br> in CSS, HTML, and JavaScript allows me to create engaging front-end<br> experiences. I'm also experienced in UI/UX design using Figma and <br>building interactive web applications with React<br>
                     </p>
@@ -838,87 +1146,68 @@ the modern Proffesional  Softwares<br>
             </section>
         </section>
         
-        <section>
+        <section id="Gallery">
             <div>
                 <h1>Gallery</h1>
             </div>
             <section>
-                <aside>
-                    <div>
-                         <img width="200" src="assets/WhatsApp Image 2023-06-22 at 8.21.15 PM (1).jpeg" alt="gallery photo">
-                         <img width="200" src="assets/WhatsApp Image 2023-06-22 at 8.21.15 PM.jpeg" alt="gallery photo">
-                         <img width="200" src="assets/WhatsApp Image 2023-07-22 at 7.02.47 PM.jpeg" alt="gallery photo">
-                         <img width="200" src="assets/WhatsApp Image 2023-07-22 at 7.02.49 PM.jpeg" alt="gallery photo">
-                    </div>
-                    <div>
-
-                         <img width="200" src="assets/WhatsApp Image 2023-07-22 at 7.02.53 PM.jpeg" alt="gallery photo">
-                         <img width="200" src="assets/WhatsApp Image 2023-07-22 at 7.02.54 PM.jpeg" alt="gallery photo">
-                         <img width="200" src="assets/WhatsApp Image 2023-07-22 at 7.02.59 PM.jpeg" alt="gallery photo">
-                         <img width="200" src="assets/WhatsApp Image 2023-07-22 at 7.03.00 PM.jpeg" alt="gallery photo">
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </aside>
+                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.47 PM.jpeg" alt="galleryPhotoes"></div>
+                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.49 PM.jpeg" alt="galleryPhotoes"></div>
+                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.53 PM.jpeg" alt="galleryPhotoes"></div>
+                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.59 PM.jpeg" alt="galleryPhotoes"></div>
+                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.04 PM.jpeg" alt="galleryPhotoes"></div>
+                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.05 PM (1).jpeg" alt="galleryPhotoes"></div>
+                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.06 PM.jpeg" alt="galleryPhotoes"></div>
+                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.54 PM.jpeg" alt="galleryPhotoes"></div>
             </section>
         </section>
 
-        <section>
-            <section>
-                <aside>
-                    <div></div>
-                    <div></div>
-                </aside>
-            </section>
-        </section>
 
-        <section>
-            <section>
-                <aside>
-                    </div>
-                    </div>
-                    <div>
-                    </div>
-                </aside>
-            </section>
-        </section>
-
-        <section>
+        <section id="Contact me">
+            <div>
+                <h1>Contact Me</h1>
+            </div>
             <section>
                 <article>
                     <p>
                         Great Vision without great People irrelevant.Let’s Work together
                     </p>
                 </article>
-                <address></address>
+                <address>
+                    <p>
+                        My main address is <br> No 256, Galagoda,<br>Kuleegoda,<br>Ambalangoda<br>
+                    </p>
+                    <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">
+                        Follow Me On:
+                    </h1>
+                </address>
                 <aside>
 
-                    <fieldset>
-                        <form action="">
-                        <legend>Contact Information</legend>
-                        <br>
-                        <br>
-                        <input id="Enter Your Full Name" type="text" placeholder="Enter Your Full Name" required >
-                        <br>
-                        <br>
-                        <input id="Enter Your Email Address" type="text" placeholder="Enter Your Address" required >
-                        <br>
-                        <br>
-                        <textarea name="Enter Your Message" id="Enter Your Message" cols="30" rows="10"></textarea>
-                        <br>
-                        <br>
-                        <button type="submit">Submit</button>
+                    
+                    <form action="">
+                        <h1 style="font-size: 10px; position:absolute; margin-left:2.7vw;">Contact Information</h1>
 
-                    </form>
-                    </fieldset>
-                    
-                    
+                        <div style="bottom: 100px;">
+                        <input style="width: 50vw; height:5vh;" id="Enter Your Full Name" type="text" placeholder="Enter Your Full Name" required >
+                        </div>
+
+                        <div style="bottom: 70px;">
+                        <input style="width: 50vw; height:5vh;" id="Enter Your Email Address" type="text" placeholder="Enter Your Address" required >
+                        </div>
+
+                        <div style="bottom: 40px;">
+                        <textarea style="width: 50vw; height:20%vh" name="Enter Your Message" id="Enter Your Message" cols="30" rows="10"></textarea>
+                        </div>
+
+                    </form>   
+                    <div>
+                         <a  href="Submit">Submit</a>
+                     </div>          
                 </aside>
+                
                 <aside></aside>
             </section>
+            
         </section>
         
         <section>
