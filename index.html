@@ -7,706 +7,244 @@
     <meta name="viewport" content="width=device-width user-scalable=no initial-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
     <meta name="theme-color" content="red">
-   <link rel="icon" href="web.png">
-   <link rel="stylesheet" href="normalize.css">
-   <meta name="Keywords" content="IJSE, HTML, CSS, Software Engineer">
-   <meta name="descriptions" content="i’m Hasith Pahasara Mahagama. i’m FrontEnds Developer.
-I developed for a new  generation specifically for 
+    <link rel="icon" href="web.png">
+    <link rel="stylesheet" href="normalize.css">
+    <meta name="Keywords" content="IJSE, HTML, CSS, Software Engineer">
+    <meta name="descriptions" content="i’m Hasith Pahasara Mahagama. i’m FrontEnds Developer.
+I developed for a new  generation specifically for
 the modern Professional Softwares">
-<meta name="owner" content="Hasith">
-<meta name="author" content="Hasith">
-<meta name="robots" content="index, follow">
+    <meta name="owner" content="Hasith">
+    <meta name="author" content="Hasith">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/resources/normalize/normalize.css">
 
-<style>
-    body{
-        overflow-x: hidden;
-    }
-    body>section{
-        position: relative;
-        left: 10px;
-    }
-    header {
-        height: 70px;
-        width: 100vw;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        margin: auto;
-        box-shadow: 1px 2px 9px 1px #000000;
-        z-index: 15;
-        background: rgb(0, 0, 0);
-    }
-
-    header > nav > ul > li {
-        position: relative;
-        display: inline-block;
-        padding: 10px;
-        left: 35vw;
-        margin-left: 2%;
-    }
-
-    header> nav> ul> li > a{
-        text-decoration: none;
-        font-size: 18px;
-        color: hsl(0, 0%, 100%);
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    main {
-        position: relative;
-        top: 100px;
-        z-index: 3;
-        padding-left: 0px;
-        padding-right: 10px;
-    }
-   
-    main>section:nth-child(1)>div:nth-child(1){
-        position: sticky;
-        display: absolute;
-        height: 10vh;
-        width: 100%;
-        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
-        top: 0;
-    }
-    
-     main > section:nth-child(1)> div:nth-child(1) > h1 {
-        color: #000000;;
-
-        display: inline-block;
-        position: relative;
-        left:20px;
-    }
-    main>section:nth-child(1){
-        width: 100vw;
-        background: url("../../WorkZone/MyPortfolio/assets/Capture3.PNG");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-    main>section:nth-child(1)>aside{
-        display: inline-block;
-        position: relative;
-        width: 30vw;
-        height: 400px;
-        left: 60vw;
-        bottom: 10vh;
-    }
-    main>section:nth-child(1)>:nth-child(5)>div{
-      width: 300px;
-      height: 300px;
-      background:linear-gradient(rgb(44, 44, 44), rgb(255, 255, 255));
-      border-radius: 100%;
-      border: solid 10px rgb(51, 51, 51);
-
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-    }
-    
-    main>section:nth-child(1)>:nth-child(6){
-        position: relative;
-        display: inline-block;
-        bottom: 30vh;
-        right: 25%;
-    }
-    main>section:nth-child(1)>hgroup>h1{
-        position: relative;
-        display: inline-block;
-        margin-bottom: 0px;
-        left: 4%;
-        font-size: 60px;
-    }
-    main>section:nth-child(1)>hgroup>h2{
-        position: relative;
-        display: inline-block;
-        margin-top: 0;
-        top: 75px;
-        right: 3%;
-        font-size: 60px;
-    }
-    main>section:nth-child(1)>:last-child{
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        bottom: 15vh;
-        right: 49%;
-        background-color: rgb(117, 117, 117);
-    }
-    main>section:nth-child(1)>:last-child>a{
-        position: relative;
-        font-size: 30px;
-        text-decoration: none;
-        text-align: center;
-         color: rgb(0, 14, 75);
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        top: 20%;
-        bottom: 0%;
-        left: 20%;
-
-    }
+    <style>
 
 
-    
-
-
-
-
-
-
-
-
-    main>section:nth-child(2)>div:nth-child(1){
-        position: sticky;
-        display: block;
-        height: 10vh;
-        width: 100%;
-        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
-        top: 0;
-    }
-     main>section:nth-child(2)>div:nth-child(1)>h1{
-        display: inline-block;
-        position: relative;
-        left: 40px;
-    }
-    main>section:nth-child(2){
-        position: relative;
-        display: inline-block;
-        width: 100vw;
-        background: url("../../WorkZone/MyPortfolio/assets/1554244010.jpeg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-
-    main>section:nth-child(2)>div:nth-child(2)>div{
-      width: 300px;
-      height: 300px;
-      background:linear-gradient(rgb(44, 44, 44), rgb(255, 255, 255));
-      border-radius: 100%;
-      border: solid 10px rgb(0, 0, 0);
-
-      border-top-color: red;
-
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-    }
-    main>section:nth-child(2)>div:nth-child(2)>div:hover{
-        transform: rotate(360deg);
-        transition-duration: 5s;
-    }
-    main>section:nth-child(2)>div:nth-child(2){
-        display: inline-block;
-        position: relative;
-        width: 40vw;
-        height: 60vh;
-        top: 12vh;
-    }
-
-    main>section:nth-child(2)>div:nth-child(3){
-        display: inline-block;
-        position: relative;
-        left: 10px;
-        bottom: 100px;
-    }
-    main>section:nth-child(2)>div:nth-child(3)>p{
-       color: white;
-    }
-
-    main>section:nth-child(2)>div:nth-child(4){
-        display: inline-block;
-        position: relative;
-        width: 150px;
-        height: 50px;
-        background-color: rgb(117, 117, 117);
-        right: 20%;        
+        body>section{
+            position: relative;
+            left: 0px;
+            box-sizing: border-box;
         }
-    main>section:nth-child(2)>div:nth-child(4)>a{
-        position: relative;
-        text-decoration: none;
-        text-align: center;
-        font-size: 25px;
-        color: rgb(0, 14, 75);
-         top: 20%;
-         bottom: 0px;
-         left: 4%;
-         margin: auto;
-         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-     main>section:nth-child(2)>div:nth-child(5){
-        display: inline-block;
-        position: relative;
-        width: 150px;
-        height: 50px;
-        background-color: rgb(117, 117, 117);
-        left: 41%;
-        bottom: 23.5vh;
-    }
-    main>section:nth-child(2)>div:nth-child(5)>a{
-        text-decoration: none;
-        text-align: center;
-        font-size: 25px;
-        color: rgb(0, 14, 75);
-         top: 20%;
-         bottom: 0px;
-         left: 3%;
-         margin: auto;
-         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-     main>section:nth-child(2)>div:nth-child(5)>h1{
-        position: relative;
-        display: inline-block;
-        bottom: 9px;
-        font-size: 22px;
-    }
-     main>section:nth-child(2)>div:nth-child(4)>h1{
-        position: relative;
-        display: inline-block;
-        bottom: 9px;
-        font-size: 22px;
-    }
-    main>section:nth-child(2)>:last-child{
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        bottom: 50vh;
-        left: 30%;
-    }
-    main>section:nth-child(2)>:last-child>h1{
-        font-size: 80px;
-        display: inline-block;
-        position: relative;
-        bottom: 100px;   
-    }
+        header {
+            height: 70px;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+            box-shadow: 1px 2px 9px 1px #000000;
+            z-index: 15;
+            background: rgb(0, 0, 0);
+        }
+
+        header > nav > ul  {
+            width: max-content;
+            padding: 0;
+            position: absolute;
+            right: 10px;
+
+        }
+
+        header > nav > ul > li {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            /*left: 35vw;*/
+        }
+
+        header> nav> ul> li > a{
+            text-decoration: none;
+            font-size: 18px;
+            color: hsl(0, 0%, 100%);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        main {
+            position: relative;
+            top: 70px;
+            z-index: 3;
+        }
+
+        main>section:nth-child(1)>div:nth-child(1){
+            position: sticky;
+            height: 10vh;
+            width: 100%;
+            background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+            top: 70px;
+        }
 
 
+        main>section:nth-child(1)>div:nth-child(1)>h1{
+            margin-top: 0;
+        }
 
-
-
-
-
-
-
-
-    main>section:nth-child(3){
-        width: 100vw;
-        height: 100vh;
-        background-color: #3f3f3f;
-    }
-
-    main>section:nth-child(3)>div:nth-child(1){
-         position: sticky;
-        display: block;
-        height: 10vh;
-        width: 100%;
-        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
-        top: 0;
-    }
-
-     main>section:nth-child(3)>div:nth-child(1)>h1{
-        display: inline-block;
-        position: relative;
-        left: 40px;
-    }
-
-    main>section:nth-child(3)>div:nth-child(2){
-        position: relative;
-        display: inline-block;
-        right: 0px;
-        width: 100vw;
-        height: 50vh;
-        background: url("../../WorkZone/MyPortfolio/assets/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2JsYWNrLXNjcmVlbi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIxMjAwIn19fQ==.webp");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    }
-
-    main>section:nth-child(3)>section>aside>div:nth-child(1){
-        display: inline-block;
-        position: relative;
-        width: 300px;
-        height: 400px;
-        left: 50px;
-        bottom: 240px;
-        border: 2px solid black;
-        background-color: white
-    }
-     
-    main>section:nth-child(3)>section>aside>div:nth-child(1)>h1{
-        font-size: 25px;
-        text-align: center;
-        text-decoration: none;
-    }
-    main>section:nth-child(3)>section>aside>div:nth-child(1)>p{
-        font-size: 18px;
-        text-align: center;
-        text-decoration: none;
-    }
-     main>section:nth-child(3)>section>aside>div:nth-child(2){
-        display: inline-block;
-        position: relative;
-        width: 300px;
-        height: 400px;
-        left: 222px;
-        bottom: 218px;
-        border: 2px solid black;
-        background-color: white
-    }
-    main>section:nth-child(3)>section>aside>div:nth-child(2)>h1{
-        font-size: 25px;
-        text-align: center;
-        text-decoration: none;
-    }
-    main>section:nth-child(3)>section>aside>div:nth-child(2)>p{
-        font-size: 18px;
-        text-align: center;
-        text-decoration: none;
-    }
-     main>section:nth-child(3)>section>aside>div:nth-child(3){
-        display: inline-block;
-        position: relative;
-        width: 300px;
-        height: 400px;
-        left: 380px;
-        bottom: 250px;
-        border: 2px solid black;
-        background-color: white
-    }
-main>section:nth-child(3)>section>aside>div:nth-child(3)>h1{
-        font-size: 25px;
-        text-align: center;
-        text-decoration: none;
-    }
-    main>section:nth-child(3)>section>aside>div:nth-child(3)>p{
-        font-size: 18px;
-        text-align: center;
-        text-decoration: none;
-    }
-
-
-
-
-
-
-
-
-
-    main>section:nth-child(4){
+        main>section:nth-child(1)>section:nth-child(2)>hgroup h1,main>section:nth-child(1)>section:nth-child(2)>hgroup h2 {
+            color: #000000;
+               font-size: 80px;
+               margin-top: 0;
+               margin-left: 120px;
+               position: relative;
+               top: 90px;
         
-        background: url("../../WorkZone/MyPortfolio/assets/wp11224017.webp");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;        
-        width: 100vw;
-        height: 100vh;
-    }
-    main>section:nth-child(4)>div:nth-child(1){
-      position: sticky;
-        display: block;
-        height: 10vh;
-        width: 100%;
-        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
-        top: 0;  
-    }
-    main>section:nth-child(4)>div:nth-child(1)>h1{
-        display: inline-block;
-        position: relative;
-        left: 40px;
-    }
-    main>section:nth-child(4)>section>div{
-        display: inline-block;
-        position: relative;
-        bottom: 90px;
-        left: 250px;
-        right: 48px;
-        left: 230px;
-    }
-    main>section:nth-child(4)>div:nth-child(2){
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 100px;
-        border: 2px solid red;
-        top: 182px;
-        left: 35px;
-    }
-    main>section:nth-child(4)>div:nth-child(3){
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 100px;
-        border: 2px solid red;
-        left: 965px;
-        top: 182px;
-    }
-    main>section:nth-child(4)>div:nth-child(4){
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        right: 280px;
-        top: 357px;
-        bottom: 0px;
-        border: 2px solid red;
-        background-color: white;      
-    }
-     main>section:nth-child(4)>div:nth-child(4)>a{
-        position: relative;
-        display: inline-block;
-        left: 20px;
-       font-size: 20px;
-       text-decoration: none;
-       top: 25%;
-       bottom: 0px;
-       margin: auto;
-       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    main>section:nth-child(4)>div:nth-child(5){
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        left: 650px;
-        border: 2px solid red;
-        top: 357px;
-        bottom: 0px; 
-        background-color: white;
-    }
-    main>section:nth-child(4)>div:nth-child(5)>a{
-        position: relative;
-        display: inline-block;
-        left: 2px;
-        font-size: 20px;
-        text-decoration: none;
-        text-align: center;
-        top: 25%;
-        bottom: 0px;
-        left:5%;
-        margin: auto;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+        }
 
-   
+        main>section:nth-child(1)>section:nth-child(2)>hgroup h2{
+            margin-top: -50px;
+        }
+
+        main>section:nth-child(1)>section:nth-child(2)>hgroup h1 span,main>section:nth-child(1)>section:nth-child(2)>hgroup h2 span{
+        color: yellow;
+        }
+        main>section:nth-child(1){
+            width: 100%;
+            background: url("../../WorkZone/MyPortfolio/assets/Capture3.PNG");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section:nth-child(1)>section:nth-child(2){
+            width: 20%;
+            height: 100vh;
+            background-color: #3f3f3f;
+            margin-top: 0;
+        }
+      
+        main>section:nth-child(1)>section:nth-child(2)>div:nth-child(3){
+            /* background-color: aqua; */
+            width: 800px;
+            height: 200px;
+        }
+        main>section:nth-child(1)>section:nth-child(2)>div:nth-child(3)>p{
+            font-size: 30px;
+            margin-top: 150px;
+            margin-left: 130px;
+            font-weight: 600;
+            
+        }
+
+        main>section:nth-child(1)>section:nth-child(2)>div:nth-child(3)>p span{
+            color: yellow;
+        }
+
+        main>section:nth-child(1)>section:nth-child(2)>div:nth-child(4)>a{
+            margin-left: 130px;
+            margin-top: 60px;
+           padding: 10px 60px;
+            background-color: white;
+            border-radius: 40px;
+            text-decoration: none;
+        }
+        main>section:nth-child(1)>div:nth-child(3){
+            width: 300px;
+            height: 300px;
+            background:linear-gradient(rgb(44, 44, 44), rgb(255, 255, 255));
+            border-radius: 100%;
+            border: solid 10px rgb(51, 51, 51);
+
+            position: absolute;
+            top: 0;
+            bottom: 300px;
+            right: 0;
+            left: 800px;
+            margin: auto;
+        }
+        main>section:nth-child(1)>:last-child{
+            position: relative;
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            bottom: 15vh;
+            right: 49%;
+            background-color: rgb(117, 117, 117);
+        }
+        main>section:nth-child(1)>:last-child>a{
+            position: relative;
+            font-size: 30px;
+            text-decoration: none;
+            text-align: center;
+            color: rgb(0, 14, 75);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            top: 20%;
+            bottom: 0%;
+            left: 20%;
+
+        }
 
 
 
 
 
-    main>section:nth-child(5)>div:nth-child(1){
-        position: sticky;
-        display: block;
-        height: 10vh;
-        width: 100%;
-        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
-        top: 0;  
-    }
-    main>section:nth-child(5)>div:nth-child(1)>h1{
-        display: inline-block;
-        position: relative;
-        left: 40px;
-    }
-    main>section:nth-child(5){
+
+
+
+
+
+
+        main>section:nth-child(2){
+            width: 100%;
+            height: 100vh;
+            font-size: 0;
+             background: url("../../WorkZone/MyPortfolio/assets/1554244010.jpeg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section:nth-child(2)>section:nth-child(1){
+            width: 40%;
+            height: 100vh;
+            display: inline-block;
+            position: relative;
+        }
+
+        main>section:nth-child(2)>section:nth-child(1)>div{
+            width: 60%;
+            height: 60%;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        main>section:nth-child(2)>aside:nth-child(2){
+            width: 60%;
+            height: 100vh;
+            display:
+             inline-block;
+             position: relative;
+        }
+
+        main>section:nth-child(2)>aside:nth-child(2)>article{
+            width: 70%;
+            height: 70%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        main>section:nth-child(2)>aside:nth-child(2)>article>p{
+            font-size: 20px;
+        }
+
+        main>section:nth-child(2)>aside:nth-child(2)>article a{
+            font-size: 30px;
+           
+           padding: 10px 60px;
+            background-color: white;
+            border-radius: 40px;
+            text-decoration: none;
+            
+        }
         
-        background: url("../../WorkZone/MyPortfolio/assets/862ba5a6-8421-4a06-8011-6c9d109eff5e.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    main>section:nth-child(5)>aside>div:nth-child(1){
-        position: relative;
-        display: inline-block;
-        width: 200px;
-        height: 350px;
-        top: 95px;
-        left: 65px;
-        border: 2px solid red;
-        background-color: black;
-        border-radius: 5%;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(1)>h1{
-        text-align: center;
-        color: white;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(1)>p{
-        color: white;
-        text-align: center;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(2){
-        display: inline-block;
-        position: relative;
-        width: 200px;
-        height: 200px;
-        top: 110px;
-        left: 186px;
-        border: 2px solid red;
-        background-color: black;
-        border-radius: 5%;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(2)>h3{
-        text-align: center;
-        color: white;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(2)>p{
-        color: white;
-        text-align: center;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(3){
-        display: inline-block;
-        position: relative;
-        width: 200px;
-        height: 200px;
-        top: 125px;
-        left: 210px;
-        border: 2px solid red;
-        background-color: black;
-        border-radius: 5%;
-    }
-     main>section:nth-child(5)>aside>div:nth-child(3)>h3{
-        text-align: center;
-        color: white;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(3)>p{
-        color: white;
-        text-align: center;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(4){
-        display: inline-block;
-        position: relative;
-        width: 200px;
-        height: 200px;
-        bottom: 109px;
-        right: 229px;
-        border: 2px solid red;
-        background-color: black;
-        border-radius: 5%;
-    }
-     main>section:nth-child(5)>aside>div:nth-child(4)>h3{
-        text-align: center;
-        color: white;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(4)>p{
-        color: white;
-        text-align: center;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(5){
-        position: relative;
-        display: inline-block;
-        width: 200px;
-        height: 200px;
-        bottom: 109px;
-        right: 206px;
-        border: 2px solid red;
-        border-radius: 5%;
-        background-color:black;
-    }
-     main>section:nth-child(5)>aside>div:nth-child(5)>h3{
-        text-align: center;
-        color: white;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(5)>p{
-        color: white;
-        text-align: center;
-    }
-    main>section:nth-child(5)>aside{
-        height:600px
-    }
-    main>section:nth-child(5)>aside>div:nth-child(6){
-        position: relative;
-        display: inline-block;
-        width: 200px;
-        height: 350px;
-        top: 60px;
-        right: 13px;
-        border: 2px solid red;
-        background-color: #000000;
-        border-radius: 5%;
-        text-align: center;
-    }
-     main>section:nth-child(5)>aside>div:nth-child(6)>h3{
-        text-align: center;
-        color: white;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(6)>p{
-        color: white;
-        text-align: center;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(6)>div{
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        top: 50px;
-        background-color: gray;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(6)>div>a{
-        text-decoration: none;
-        top: 20%;
-        bottom: 0;
-        margin: auto;
-        position: relative;
-        display: inline-block;
-        font-size: 25px;
-        bottom: 5px
-    }
-    main>section:nth-child(5)>aside>div:nth-child(6)>p{
-        position: relative;
-        display: inline-block;
-        top: 50px;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(7){
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        left: 540px;
-        bottom: 850px;
-        background-color: rgb(107, 107, 107);
-    }
-    main>section:nth-child(5)>aside>div:nth-child(7)>h1{
-        position: relative;
-        display: inline-block;
-        left: 20px;
-        bottom: 4px;
-        font-size: 25px;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(8){
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        left: 900px;
-        bottom: 850px;
-        background-color: rgb(107, 107, 107);
-    }
-    main>section:nth-child(5)>aside>div:nth-child(8)>h1{
-        position: relative;
-        display: inline-block;
-        left: 39px;
-        bottom: 4px;
-        font-size: 25px;
-    }
-    main>section:nth-child(5)>aside>div:nth-child(9){
-        position: relative;
-        display: inline-block;
-        width: 10px;
-        height: 500px;
-        left: 625px;
-        bottom: 385px;
-        background-color: black;
-    }
-    
 
 
 
@@ -714,7 +252,190 @@ main>section:nth-child(3)>section>aside>div:nth-child(3)>h1{
 
 
 
-    main>section:nth-child(6)>div:nth-child(1)>h1{
+        main>section:nth-child(3){
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: url("../../WorkZone/MyPortfolio/assets/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2JsYWNrLXNjcmVlbi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIxMjAwIn19fQ==.webp");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section:nth-child(3)>div:nth-child(1){
+            position: sticky;
+            display: block;
+            height: 10vh;
+            width: 100%;
+            background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+            top: 70px;
+        }
+
+
+        main>section:nth-child(3)>section:nth-child(3){
+            width: 80%;
+            height: 60vh;
+            position: absolute;
+            top: 80px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;
+            gap: 30px;
+
+        }
+
+        main>section:nth-child(3)>section:nth-child(3)>div{
+            background-color: white;
+        }
+        
+
+
+
+
+
+
+
+
+
+        main>section:nth-child(4){
+
+            background: url("../../WorkZone/MyPortfolio/assets/wp11224017.webp");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        main>section:nth-child(4)>div:nth-child(1){
+            position: sticky;
+            display: block;
+            height: 10vh;
+            width: 100%;
+            background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+            top: 70px;
+        }
+        main>section:nth-child(4)>div:nth-child(1)>h1{
+            display: inline-block;
+            position: relative;
+            left: 40px;
+        }
+       
+
+
+        main>section:nth-child(4)>section:nth-child(2){
+            width: 70%;
+            height: 70vh;
+            position: absolute;
+            top: 80px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 1fr 1fr;
+            gap: 30px;
+
+        }
+
+        main>section:nth-child(4)>section:nth-child(2)>div{
+            background-color: white;           
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        main>section:nth-child(5){
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: url("../../WorkZone/MyPortfolio/assets/862ba5a6-8421-4a06-8011-6c9d109eff5e.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section:nth-child(5)>div:nth-child(1){
+            position: sticky;
+            display: block;
+            height: 10vh;
+            width: 100%;
+            background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+            top: 70px;
+        }
+        main>section:nth-child(5)>div:nth-child(1)>h1{
+            display: inline-block;
+            position: relative;
+            left: 40px;
+        }
+
+        main>section:nth-child(5)>section:nth-child(2),main>section:nth-child(5)>section:nth-child(3){
+            width: 20%;
+            height: 60vh;
+            background-color: black;
+        }
+
+        main>section:nth-child(5)>section:nth-child(2){
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        main>section:nth-child(5)>section:nth-child(3){
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        main>section:nth-child(5)>section:nth-child(4){
+            width: 40%;
+            height: 60vh;
+            /* background-color: red; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+
+        }
+
+        main>section:nth-child(5)>section:nth-child(4)>div{
+            background-color: #000000;
+        }
+
+
+
+
+
+
+
+
+       
+main>section:nth-child(6)>div:nth-child(1)>h1{
         display: inline-block;
         position: relative;
         left: 40px;
@@ -763,43 +484,50 @@ main>section:nth-child(3)>section>aside>div:nth-child(3)>h1{
 
 
 
-    main>section:nth-child(7){
-        background: url("../../WorkZone/MyPortfolio/assets/istockphoto-1343057693-612x612.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    main>section:nth-child(7)>div:nth-child(1){
-        position: sticky;
-        display: block;
-        height: 10vh;
-        width: 100%;
-        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
-        top: 0;
-    }
-    main>section:nth-child(7)>div:nth-child(1)>h1{
-        display: inline-block;
-        position: relative;
-        left: 40px;
-    }
+        main>section:nth-child(7){
+            background: url("../../WorkZone/MyPortfolio/assets/istockphoto-1343057693-612x612.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        main>section:nth-child(7)>div:nth-child(1){
+            position: sticky;
+            display: block;
+            height: 10vh;
+            width: 100%;
+            background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+            top: 70px;
+        }
+        main>section:nth-child(7)>div:nth-child(1)>h1{
+            display: inline-block;
+            position: relative;
+            left: 40px;
+        }
 
-    main>section:nth-child(7)>section{
-        width: 90%;
-        height: 80%;
-        position: relative;
-        top: 5%;
-        left: 4%;
-        background: white;
-        border: 2px solid black;
-        display: grid;
-        grid-template-rows: repeat(2,1fr);
-        grid-template-columns: repeat(4,1fr);
-    }
-    main>section:nth-child(7)>section>div{
-        border: 2px solid black;
-    }
+        main>section:nth-child(7)>section:nth-child(2){
+            width: 100%;
+            height: 80vh;
+            position: absolute;
+            /* background-color: red; */
+            top: 200px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+
+        main>section:nth-child(7)>section:nth-child(2)>div{
+            color: antiquewhite;
+            border: 2px solid black;
+
+        }
 
 
 
@@ -807,314 +535,231 @@ main>section:nth-child(3)>section>aside>div:nth-child(3)>h1{
 
 
 
+        main>section:nth-child(8){
+            background: url("../../WorkZone/MyPortfolio/assets/Capture.PNG");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            font-size: 0;
+            box-sizing: border-box;
+        }
+        main>section:nth-child(8)>div:nth-child(1)>h1{
+            display: inline-block;
+            position: relative;
+            left: 40px;
+            font-size: 30px;
+        }
+        main>section:nth-child(8)>div:nth-child(1){
+            position: sticky;
+            display: block;
+            height: 10vh;
+            width: 100%;
+            background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
+            top: 70px;
+        }
 
-    main>section:nth-child(8){
-         background: url("../../WorkZone/MyPortfolio/assets/Capture.PNG");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    main>section:nth-child(8)>div:nth-child(1){
-        position: sticky;
-        display: block;
-        height: 10vh;
-        width: 100%;
-        background: linear-gradient(rgba(202, 148, 0, 0.795),rgb(252, 214, 2));
-        top: 0;
-    }
-    main>section:nth-child(8)>div:nth-child(1)>h1{
-        display: inline-block;
-        position: relative;
-        left: 40px;
-    }
-    main>section:nth-child(8)>section>article>p{
-        position: relative;
-        display: inline-block;
-        font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: #000000;  
-        left: 40%;;
-    }
-    main>section:nth-child(8)>section>address{
-        position: relative;
-        display: inline-block;
-        top: 20%;
-    }
-    main>section:nth-child(8)>section>address>p:nth-child(1){
-        position: relative;
-        display: inline-block;
-        font-size: 20px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        top: 10%;
-        left: 20%;
-    }
-    main>section:nth-child(8)>section>address>h1{
-        top: 146px;
-        position: absolute;
-        margin-left: 13px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        bottom: 0;
-        margin: auto;
-        margin-left: 35px;
-        font-size: 20px;
-    }
-    main:nth-child(8)>section>aside>form>h1{
-        position: relative;
-        display: inline-block;
-        font-size: 20px;
-        left: 20%;
-    }
+        main>section:nth-child(8)>section:nth-child(2){
+            width: 30%;
+            height: 100vh;
+            background-color: #3f3f3f;
+            display: inline-block;
+            position: relative;
+           
+            
+        }
 
-    main>section:nth-child(8)>section>aside>form>:nth-child(2){
-        position: relative;
-        display: inline-block;
-        left: 40%;
-    }
-    main>section:nth-child(8)>section>aside>form>:nth-child(3){
-        position: relative;
-        display: inline-block;
-        left: 40%;
-    }
-    main>section:nth-child(8)>section>aside>form>:nth-child(4){
-        position: relative;
-        display: inline-block;
-        left: 40%;
-    }
-    main>section:nth-child(8)>div:nth-child(2){
-        position: relative;
-        display: inline-block;
-    }
-    main>section:nth-child(8)>section>aside>:last-child{
-        position: relative;
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        background-color: rgb(117, 117, 117);
-        left: 50%;
-    }
+        main>section:nth-child(8)>section:nth-child(3){
+            width: 70%;
+            height: 100vh;
+            background-color: black;
+            display: inline-block;
+            position: relative;
+        }
 
-    main>section:nth-child(8)>section>aside>:last-child>a{
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        text-align: center;
-        top: 30%;
-        left: 25%;
-        color: rgb(0, 14, 75);
-        font-size: 20px;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    
+        main>section:nth-child(8)>section:nth-child(2)>article{
+            width: 50%;
+            height: 30%;
+            background-color: red;
+            margin-top: 0;
+            position: absolute;
+            top: 0;
+        }
 
-    
-   
-</style>
+        main>section:nth-child(8)>section:nth-child(2)>address{
+            width: 50%;
+            height: 30%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+        }
+
+        main>section:nth-child(8)>section:nth-child(2)>address>p{
+            font-size: 20px;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        main>section:nth-child(8)>section:nth-child(2)>article>p{
+            font-size: 20px;
+        }
+       
+
+
+
+    </style>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#Home1>">Home</a></li>
-                <li><a href="#About Me">About me</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#My Projects/Assignments">My Projects & Assignments </a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Gallery">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        
-        
-        <section id="Home1">
-            <div>
-                <h1>Home</h1>
-            </div>
-            <div></div>
-            <div></div>
+<header>
+    
+    <nav>
+        <ul>
+            <li><a href="#Home1>">Home</a></li>
+            <li><a href="#About Me">About me</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#My Projects/Assignments">My Projects & Assignments </a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+
+    <section id="Home1">
+        <div>
+            <h1>Home</h1>
+        </div>
+
+        <section>
             <hgroup>
-                <h1>Work</h1>
-                <h2>AnyWhere</h2>
+                <h1> <span>W</span>ork</h1>
+                <h2><span>A</span>nyWhere</h2>
             </hgroup>
-            
-                <aside>
-                    <div>
-                        
-                    </div>
-                </aside>
-            
+    
+            <aside>
                 <div>
-                <p>
-                    I’m <b>Hasith </b>Pahasara Mahagama. i’m FrontEnd<br> Developer.<br>I developed for a new  generation<br> specifically for 
-the modern Proffesional  Softwares<br>
-                </p>
+    
                 </div>
-                <div>
-                   
-                        <a  href="#Contact me">Hire Me</a>
-                    
-                </div>
-        </section>
-
-        <section id="About Me">
-            <div>
-                <h1>About Me</h1>
-            </div>
-            <div>
-            <div>
-
-            </div>
-            </div>
-           
+            </aside>
+    
             <div>
                 <p>
-                <br>Welcome to my personal website. I'm Hasith Pahasara, a professional full stack developer <br>from Sri Lanka. With a strong commitment to<br> excellence, I bring a unique blend of creativity, analytical thinking, and attention to <br>detail to every project. Explore my portfolio and witness<br> the transformative power of technology in<br> creating impactful experiences. Let's <br>collaborate and bring your ideas to life.
+                    I’m <b> <span>Hasith</span>  </b>Pahasara Mahagama. i’m FrontEnd<br> Developer.<br>I developed for a new  generation<br> specifically for
+                    the modern Proffesional  Softwares<br>
                 </p>
             </div>
             <div>
-                 <a style="position:relative; display:inline-block" href="Download CV">Download CV</a>
-            </div>
-            <div>
-                 <a style="position:relative; display:inline-block" href="#Qualifications">Qualifications</a>
-            </div>
-            <div>
-                <h1>HI</h1>
+    
+                <a  href="#Contact me">Hire Me</a>
+    
             </div>
         </section>
 
-
-        <section id="Services">
-            <div>
-                <h1>Services</h1>
-            </div>
-            <div></div>
-            <section>
-                <aside>
-                    <div>
-                        <h1>
-                            <li><a style="color: rgb(207, 142, 0);" href="Dekstop And Mobile Application Development">Dekstop And Mobile Application Development</a></li>
-                        </h1>
-                        <p>
-                            <wbr>
-                            
-                            <br>With expertise in both<br> desktop and mobile <br>application development, I<br> excel in creating <br>captivating designs and<br> seamless user <br>experiences. Leveraging <br>my skills in creativity and<br> functionality, I deliver<br> exceptional applications <br>that drive business growth <br>across various platforms.<br>
-                            
-                            <wbr>
-                        </p>
-                    </div>
-                    <div>
-                        <h1>
-                            <li><a style="color: rgb(207, 142, 0);" href="Web Application Development">Web Application Development</a></li>
-                        </h1>
-                        <p>
-                            <wbr>
-                            <br>With a strong command in<br> web application <br>development, I bring a <br>blend of creativity,<br> functionality, and user-centric<br> design to every <br>project. From <br>conceptualization to <br>execution, I deliver<br> exceptional web <br>applications that elevate<br> user experiences and fuel<br> business growth.<br>
-                            <wbr>
-                        </p>
-                    </div>
-                    <div>
-                        <h1>
-                            <li><a style="color: rgb(207, 142, 0);" href="Freelancing">Freelancing</a></li>
-                        </h1>
-                        <p>
-                            <wbr>
-                            <br>As a skilled freelancer, I<br> bring a blend of creativity,<br> expertise, and a user-centric<br> approach to every<br> project. From start to<br> finish, I deliver exceptional<br> results that enhance user <br>experiences and drive<br> business growth. With a <br>focus on quality and client<br> satisfaction, I provide <br>valuable solutions that <br>meet and exceed expectations.<br>
-                            <wbr>
-                        </p>
-                    </div>
-                </aside>
-            </section>
-        </section>
-
+        <div></div>
+        <div></div>
         
+    </section>
 
-        <section id="My Projects/Assignments">
+    <section id="About Me">
+
+        <section>
+            <div></div>
+        </section>
+        <aside>
+            <article>
+                <p>
+                    <br>Welcome to my personal website. I'm Hasith Pahasara, a professional full stack developer <br>from Sri Lanka. With a strong commitment to<br> excellence, I bring a unique blend of creativity, analytical thinking, and attention to <br>detail to every project. Explore my portfolio and witness<br> the transformative power of technology in<br> creating impactful experiences. Let's <br>collaborate and bring your ideas to life.
+                    <br>
+                    <a style="position:relative; display:inline-block" href="Download CV">Download CV</a>
+                    <a style="position:relative; display:inline-block" href="#Qualifications">Qualifications</a>
+                </p>
+            </article>
+        </aside>
+        
+    </section>
+
+
+     <section id="Services">
+        <div>
+            <h1>Services</h1>
+        </div>
+        <div></div>
+        
+        <section>
             <div>
-                <h1>My Projects & Assignments</h1>
+                <h1>
+                    <a style="color: rgb(207, 142, 0);" href="Dekstop And Mobile Application Development">Dekstop And Mobile Application Development</a>
+                </h1>
+                <p>
+                    <wbr> 
+                        <br>With expertise in both<br> desktop and mobile <br>application development, I<br> excel in creating <br>captivating designs and<br> seamless user <br>experiences. Leveraging <br>my skills in creativity and<br> functionality, I deliver<br> exceptional applications <br>that drive business growth <br>across various platforms.<br> 
+                    <wbr>
+                </p>
             </div>
+            <div>
+                <h1>
+                    <a style="color: rgb(207, 142, 0);" href="Web Application Development">Web Application Development</a>
+                </h1>
+                <p>
+                    <wbr>
+                        <br>With a strong command in<br> web application <br>development, I bring a <br>blend of creativity,<br> functionality, and user-centric<br> design to every <br>project. From <br>conceptualization to <br>execution, I deliver<br> exceptional web <br>applications that elevate<br> user experiences and fuel<br> business growth.<br>
+                    <wbr>
+                </p>
+            </div>
+            <div>
+                <h1>
+                    <a style="color: rgb(207, 142, 0);" href="Freelancing">Freelancing</a>
+                </h1>
+                <p>
+                    <wbr>
+                        <br>As a skilled freelancer, I<br> bring a blend of creativity,<br> expertise, and a user-centric<br> approach to every<br> project. From start to<br> finish, I deliver exceptional<br> results that enhance user <br>experiences and drive<br> business growth. With a <br>focus on quality and client<br> satisfaction, I provide <br>valuable solutions that <br>meet and exceed expectations.<br>
+                    <wbr>
+                </p>
+            </div>
+        </section>
+    </section>
+
+
+
+    <section id="My Projects/Assignments">
+        <div>
+            <h1>My Projects & Assignments</h1>
+        </div>
+    
+        <section>
             <div></div>
             <div></div>
-            <div>
-                <a style="position:relative; display:inline-block" href="Assignments">Assignments</a>
-            </div>
-            <div>
-                <a style="position:relative; display:inline-block" href="Another Projects">Another Projects</a>
-            </div>
-            <section>
-                    <div>      
-                        <img width="850" height="450" src="assets/DashBoard.PNG" alt="DashboardPNG">   
-                    </div>
-            </section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
 
+    </section>
 
-            <section id="Qualifications">
-                <div>
-                    <h1>Qualifications</h1>
-                </div>
-                <aside>
-                    <div>
-                        <p>
-                            I firmly believe that a <br>well-rounded <br>foundation, <br>encompassing both <br>education and<br> sports, is crucial for<br> personal and <br>professional growth.<br> Here are my <br>academic and <br>sports <br>qualifications, which <br>have provided me <br>with a solid <br>knowledge base<br> and a platform to<br> excel in both areas<br>
-                        </p>
-                    </div>
-                    <div>
-                        <h3>
-                            <br>G.C.E Ordinary Level<br> Examination<br>
-                        </h3>
-                        <p>
-                            G/P/De.s Kularathna College
-                        </p>
-                    </div>
-                    <div>
-                        <h3>
-                            Graduate Diploma <br>in Software Engineering
-                        </h3>
-                        <p>
-                            Institute of Java Software<br>Engineering<br>(2022-2024)
-                        </p>
-                    </div>
-                    <div>
-                        <h3>
-                            G.C.E <br>Advanced Level<br> Examination
-                        </h3>
-                        <p>
-                            G/P/De.s Kularathna College
-                        </p>
-                    </div>
-                    <div>
-                        <h3>
-                            Software <br>Engineering <br>Degree
-                        </h3>
-                        <p>
-                            (2024-2025)
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            I’m good chess Player.I <br>have many Victories.I <br>have 10 Years<br> experience in this <br>game.
-                        </p>
-                        <div>
-                            <a  href="Certificates">Certificates</a>
-                        </div>
-                        <p>
-                            You can see all <br>Victories, Please<br> Click the<br> Certificates Button<br> and See more
-                        </p>
-                    </div>   
-                    <div>
-                        <h1>Education</h1>
-                    </div>
-                    <div>
-                        <h1>Sports</h1>
-                    </div>
-                    <div></div>
-                </aside>
-            </section>        
 
-        <section id="Skills">
-            <div>
+     <section id="Qualifications">
+        <div>
+            <h1>Qualifications</h1>
+        </div>
+       <section></section>
+       <section></section>
+
+       <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+       </section>
+    </section>
+
+     <section id="Skills">
+        <div>
                 <h1>Skills</h1>
             </div>
             <section>
@@ -1137,79 +782,102 @@ the modern Proffesional  Softwares<br>
                     </p>
                 </section>
             </section>
+    </section>
+
+    <section id="Gallery">
+        <div>
+            <h1>Gallery</h1>
+        </div>
+        <section>
+            <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.47 PM.jpeg" alt="galleryPhotoes"></div>
+            <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.49 PM.jpeg" alt="galleryPhotoes"></div>
+            <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.53 PM.jpeg" alt="galleryPhotoes"></div>
+            <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.59 PM.jpeg" alt="galleryPhotoes"></div>
+            <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.04 PM.jpeg" alt="galleryPhotoes"></div>
+            <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.05 PM (1).jpeg" alt="galleryPhotoes"></div>
+            <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.06 PM.jpeg" alt="galleryPhotoes"></div>
+            <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.54 PM.jpeg" alt="galleryPhotoes"></div>
         </section>
-        
-        <section id="Gallery">
-            <div>
-                <h1>Gallery</h1>
-            </div>
-            <section>
-                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.47 PM.jpeg" alt="galleryPhotoes"></div>
-                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.49 PM.jpeg" alt="galleryPhotoes"></div>
-                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.53 PM.jpeg" alt="galleryPhotoes"></div>
-                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.59 PM.jpeg" alt="galleryPhotoes"></div>
-                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.04 PM.jpeg" alt="galleryPhotoes"></div>
-                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.05 PM (1).jpeg" alt="galleryPhotoes"></div>
-                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.03.06 PM.jpeg" alt="galleryPhotoes"></div>
-                    <div><img width="305" height="255" src="assets/WhatsApp Image 2023-07-22 at 7.02.54 PM.jpeg" alt="galleryPhotoes"></div>
-            </section>
+    </section>
+
+
+    <section id="Contact me">
+        <div>
+            <h1>Contact Me</h1>
+        </div>
+
+        <section>
+            <article>
+                <p>
+                    Great Vision without great People irrelevant.Let’s Work together
+                </p>
+            </article>
+            <address>
+                <p>
+                    My main address is <br> No 256, Galagoda,<br>Kuleegoda,<br>Ambalangoda<br>
+                </p>
+                <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">
+                    Follow Me On:
+                </h1>
+            </address>
         </section>
 
 
-        <section id="Contact me">
-            <div>
-                <h1>Contact Me</h1>
-            </div>
-            <section>
-                <article>
-                    <p>
-                        Great Vision without great People irrelevant.Let’s Work together
-                    </p>
-                </article>
-                <address>
-                    <p>
-                        My main address is <br> No 256, Galagoda,<br>Kuleegoda,<br>Ambalangoda<br>
-                    </p>
-                    <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">
-                        Follow Me On:
-                    </h1>
-                </address>
-                <aside>
-
-                    
-                    <form action="">
-                        <h1 style="font-size: 10px; position:absolute; margin-left:2.7vw;">Contact Information</h1>
-
-                        <div style="bottom: 100px;">
-                        <input style="width: 50vw; height:5vh;" id="Enter Your Full Name" type="text" placeholder="Enter Your Full Name" required >
-                        </div>
-
-                        <div style="bottom: 70px;">
-                        <input style="width: 50vw; height:5vh;" id="Enter Your Email Address" type="text" placeholder="Enter Your Address" required >
-                        </div>
-
-                        <div style="bottom: 40px;">
-                        <textarea style="width: 50vw; height:20%vh" name="Enter Your Message" id="Enter Your Message" cols="30" rows="10"></textarea>
-                        </div>
-
-                    </form>   
-                    <div>
-                         <a  href="Submit">Submit</a>
-                     </div>          
-                </aside>
-                
-                <aside></aside>
-            </section>
+        <section>
             
         </section>
-        
-        <section>
-    </main>
 
-    <footer></footer>
+        <section>
+
+            <article>
+                <p>
+                    Great Vision without great People irrelevant.Let’s Work together
+                </p>
+            </article>
+            <address>
+                <p>
+                    My main address is <br> No 256, Galagoda,<br>Kuleegoda,<br>Ambalangoda<br>
+                </p>
+                <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">
+                    Follow Me On:
+                </h1>
+            </address>
+            <aside>
+
+
+                <form action="">
+                    <h1 style="font-size: 10px; position:absolute; margin-left:2.7vw;">Contact Information</h1>
+
+                    <div style="bottom: 100px;">
+                        <input style="width: 50vw; height:5vh;" id="Enter Your Full Name" type="text" placeholder="Enter Your Full Name" required >
+                    </div>
+
+                    <div style="bottom: 70px;">
+                        <input style="width: 50vw; height:5vh;" id="Enter Your Email Address" type="text" placeholder="Enter Your Address" required >
+                    </div>
+
+                    <div style="bottom: 40px;">
+                        <textarea style="width: 50vw; height:20%vh" name="Enter Your Message" id="Enter Your Message" cols="30" rows="10"></textarea>
+                    </div>
+
+                </form>
+                <div>
+                    <a  href="Submit">Submit</a>
+                </div>
+            </aside>
+
+            <aside></aside>
+        </section>
+
+    </section>
+
+    <section> 
+</main>
+
+<footer></footer>
 </body>
 </head>
 <body>
-    
+
 </body>
 </html>
