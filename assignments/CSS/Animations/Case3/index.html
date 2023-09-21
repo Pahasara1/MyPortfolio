@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Case 1</title>
+  <base href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="description" content="FullStack Developer">
+  <meta name="owner" content="Hasith">
+  <meta name="author" content="Hasith">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+
+    section{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 600px;
+      height: 300px;
+      border: 2px solid #ff1500;
+      overflow:hidden;
+    }
+    .full{
+      width: 400%;
+      height: 100%;
+      display: flex;
+      position: relative;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: d;
+      animation-direction: alternate;
+    }
+    .full>div{
+      flex: 1;
+      max-width: calc(100%/5);
+      height: 100%;
+    }
+    @keyframes d {
+      0%{
+        right: 0%;
+      }
+      25%{
+        right: 100%;
+      }
+      50%{
+        right: 200%;
+      }
+      75%{
+        right: 300%;
+      }
+      100%{
+        right: 300%;
+      }
+
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="full">
+  <div><img src="assets/862ba5a6-8421-4a06-8011-6c9d109eff5e.jpg" ></div>
+  <div><img src="assets/gaming-setup-steelseries-keyboards-headphones-mouse-pad-hd-wallpaper-preview.jpg"></div>
+  <div><img src="assets/istockphoto-1343057693-612x612.jpg"></div>
+  <div><img src="assets/862ba5a6-8421-4a06-8011-6c9d109eff5e.jpg" ></div>
+  <div><img src="assets/istockphoto-1343057693-612x612.jpg" ></div>
+  </div>
+</section>
+</body>
+</html>
