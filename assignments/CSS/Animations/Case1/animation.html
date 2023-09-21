@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+    <style>
+       body>div{
+        width: 100px;
+        height: 40px;
+        background: red;
+        color: red;
+        top: 0;
+        bottom: 0;
+        animation-name: anima;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        position: relative;
+        left: 0;
+        top: 0;
+        animation-direction: alternate;
+       }
+       @keyframes anima {
+            0% {
+                transform: rotate(0deg);
+                left: 0;
+                top: 0;
+            }
+            25%{
+                transform: rotate(120deg);
+                left: 80%;
+                top: 0;
+            }
+            50%{
+                transform: rotate(240deg);
+                left: 80%;
+                top: 400px;
+            }
+            75%{
+                transform: rotate(360deg);
+                left: 0;
+                top: 400px;
+            }
+            100%{
+                transform: rotate(-360deg);
+                left: 0;
+                top: 0;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
