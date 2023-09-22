@@ -5,65 +5,110 @@
     <meta name="viewport" content="width=device-width user-scalable=no initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="normalize.css">
     <title>Assignments</title>
-    <style>
-        section{
-            width: 100vw;
-            height: 100vh;
-            background: url("../../WorkZone/MyPortfolio/assets/working-notebook.jpg");
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-        }
-        section>aside:nth-child(1){
-            position: relative;
-            display: inline-block;
-            width: 80vw;
-            height: 40vh;
-            top: 10%;
-            left: 10%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        section>aside:nth-child(1)>div{
-            width: 15vw;
-            height: 30vh;
-            border: 3px solid red;
-            background: white;
-        }
-        section>aside:nth-child(2){
-            position: relative;
-            display: inline-block;
-            width: 80vw;
-            height: 40vh;
-            top: 10%;
-            left: 10%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        section>aside:nth-child(2)>div{
-            width: 15vw;
-            height: 30vh;
-            border: 3px solid red;
-            background: white;
-        }
-    </style>
+  <style>
+    main>section{
+        width: 100vw;
+        height: 100vh;
+        background: url("../../WorkZone/MyPortfolio/assets/images.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    main>section>div:nth-child(1){
+        position: sticky;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+    }
+    main>section>div:nth-child(1)>h1{
+        position: absolute;
+        left: 5%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
+    #Assignments{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #Assignments>section:nth-child(1){
+        position: absolute;
+        width: 95%;
+        height: 45%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        left: 2.5%;
+        justify-content: space-between;
+    }
+    #Assignments>section:nth-child(1)>div{
+        width: 22%;
+        height: 100%;
+        box-shadow: 1px 2px 9px 10px #000000;
+    }
+    #Assignments>section:nth-child(2){
+        position: absolute;
+        width: 95%;
+        height: 45%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        left: 2.5%;
+        justify-content: space-between;
+    }
+    #Assignments>section:nth-child(2)>div{
+        width: 22%;
+        height: 100%;
+        box-shadow: 1px 2px 9px 10px #000000;
+    }
+    #leftRight{
+        position: absolute;
+        width: 95%;
+        height: 20%;
+        display: flex;
+        left: 1%;
+        top: 45%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #leftRight>div{
+        width: 80px;
+        height: 80px;
+    }
+    
+
+  </style>
 </head>
 <body>
-<section>
-    <aside>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </aside>
-    <aside>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </aside>
+<main>
+    <section>
+    <div>
+        <h1>Assignments</h1>
+    </div>
+    <section id="Assignments">
+        <section>
+            <div><img width="100%" height="100%" src="assets/Assignments.jpg" alt="Assignment png"></div>
+            <div><img width="100%" height="100%" src="assets/Assignments.jpg" alt="Assignment png"></div>
+            <div><img width="100%" height="100%" src="assets/Assignments.jpg" alt="Assignment png"></div>
+            <div><img width="100%" height="100%" src="assets/Assignments.jpg" alt="Assignment png"></div>
+        </section>
+        <section>
+            <div><img width="100%" height="100%" src="assets/Assignments.jpg" alt="Assignment png"></div>
+            <div><img width="100%" height="100%" src="assets/Assignments.jpg" alt="Assignment png"></div>
+            <div><img width="100%" height="100%" src="assets/Assignments.jpg" alt="Assignment png"></div>
+            <div><img width="100%" height="100%" src="assets/Assignments.jpg" alt="Assignment png"></div>
+        </section>
+    </section>
+    <section id="leftRight">
+            <div><img width="100%" height="100%" src="assets/left.png" alt="left png"></div>
+            <div><img width="100%" height="100%" src="assets/right1.png" alt="right png"></div>
+    </section>
 </section>
+</main>
 </body>
 </html>

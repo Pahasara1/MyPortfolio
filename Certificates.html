@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width user-scalable=no initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Certificates</title>
+  <style>
+    main>section{
+        width: 100vw;
+        height: 100vh;
+        background: url("../../WorkZone/MyPortfolio/assets/images.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    main>section>div:nth-child(1){
+        position: sticky;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+    }
+    main>section>div:nth-child(1)>h1{
+        position: absolute;
+        left: 5%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
+    #certificates{
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #certificates>div{
+        width: 30%;
+        height: 100%;
+        box-shadow: 1px 2px 9px 3px #000000;
+    }
+    #leftRight{
+        position: absolute;
+        width: 98%;
+        height: 20%;
+        display: flex;
+        left: 1%;
+        top: 45%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #leftRight>div{
+        width: 80px;
+        height: 80px;
+    }
+
+  </style>
+</head>
+<body>
+<main>
+    <section>
+    <div>
+        <h1>Certificates</h1>
+    </div>
+    <section id="certificates">
+         <div></div>
+         <div></div>
+         <div></div>
+    </section>
+    <section id="leftRight">
+        <div><img width="100%" height="100%" src="assets/left.png" alt="left png"></div>
+        <div><img width="100%" height="100%" src="assets/right1.png" alt="right png"></div>
+    </section>
+</section>
+</main>
+</body>
+</html>

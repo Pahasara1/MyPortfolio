@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width user-scalable=no initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Qualifications</title>
+  <style>
+    main>section{
+        width: 100vw;
+        height: 100vh;
+        background: url("../../WorkZone/MyPortfolio/assets/images.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    main>section>div:nth-child(1){
+        position: sticky;
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+    }
+    main>section>div:nth-child(1)>h1{
+        position: absolute;
+        left: 5%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
+    #leftRightPage{
+        position: absolute;
+        width: 95%;
+        height: 80%;
+        left: 2.5%;
+        top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #leftRightPage>div{
+        width: 20%;
+        height: 100%;
+        background: Black;
+        box-shadow: 1px 2px 9px 10px #ffffff;
+    }
+    #leftRightPage>div:nth-child(1)>p{
+        position: relative;
+        top: 5%;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+    }
+    #leftRightPage>div:nth-child(2)>p{
+        position: relative;
+        top: 5%;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+    }
+    #leftRightPage>div:nth-child(2)>p>span{
+        color: blue;
+    }
+    #leftRightPage>div:nth-child(2)>div{
+        position: absolute;
+        top: 80%;
+        left: 84%;
+        width: 150px;
+        height: 60px;
+        background: black;
+    }
+    #leftRightPage>div:nth-child(2)>div>a{
+        text-decoration: none;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: blue;
+    }
+    #middlePages>section:nth-child(1){
+        position: absolute;
+        width: 50%;
+        height: 40%;
+        left: 25%;
+        top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+     #middlePages>section:nth-child(1)>div{
+        position: absolute;
+        top: 0;
+        width: 46%;
+        height: 95%;
+        border: 2px solid red;
+        box-shadow: 1px 2px 9px 10px #ffffff;
+        background: black;
+        border-radius: 8%;
+     }
+     #middlePages>section:nth-child(1)>div:nth-child(2){
+        position: absolute;
+        top: 0;
+        left: 54%;
+        width: 46%;
+        height: 95%;
+        border: 2px solid red;
+        box-shadow: 1px 2px 9px 10px #ffffff;
+        background: black;
+     }
+     #middlePages>section:nth-child(2){
+        position: absolute;
+        width: 50%;
+        height: 40%;
+        left: 25%;
+        top: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #middlePages>section:nth-child(2)>div{
+        position: absolute;
+        top: 0;
+        width: 46%;
+        height: 95%;
+        border: 2px solid red;
+        box-shadow: 1px 2px 9px 10px #ffffff;
+        background: black;
+        border-radius: 8%;
+     }
+     #middlePages>section:nth-child(2)>div:nth-child(2){
+        position: absolute;
+        top: 0;
+        left: 54%;
+        width: 46%;
+        height: 95%;
+        border: 2px solid red;
+        box-shadow: 1px 2px 9px 10px #ffffff;
+        background: black;
+     }
+     #middlePages>section:nth-child(1)>div:nth-child(1)>h3{
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(0, 197, 197);
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+     }
+     #middlePages>section:nth-child(1)>div:nth-child(1)>p{
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(42, 180, 0);
+        position: absolute;
+        left: 10%;
+        top: 0;
+     }
+     #middlePages>section:nth-child(1)>div:nth-child(2)>h3{
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(0, 197, 197);
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+     }
+     #middlePages>section:nth-child(1)>div:nth-child(2)>p{
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(42, 180, 0);
+        position: absolute;
+        left: 10%;
+        top: 0;
+     }
+     #middlePages>section:nth-child(2)>div:nth-child(1)>h3{
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(0, 197, 197);
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+     }
+     #middlePages>section:nth-child(2)>div:nth-child(1)>p{
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(42, 180, 0);
+        position: absolute;
+        left: 10%;
+        top: 0;
+     }
+     #middlePages>section:nth-child(2)>div:nth-child(2)>h3{
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(0, 197, 197);
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+     }
+     #middlePages>section:nth-child(2)>div:nth-child(2)>p{
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(42, 180, 0);
+        position: absolute;
+        left: 10%;
+        top: 0;
+     }
+
+
+
+  </style>
+</head>
+<body>
+<main>
+    <section>
+    <div>
+        <h1>Qualifications</h1>
+    </div>
+    <section id="leftRightPage">
+        <div>
+            <p>
+                I firmly believe that a <br>well-rounded <br>foundation, <br>encompassing both <br>education and<br> sports, is crucial for<br> personal and <br>professional growth.<br> Here are my <br>academic and <br>sports <br>qualifications, which <br>have provided me <br>with a solid <br>knowledge base<br> and a platform to<br> excel in both areas<br>
+            </p>
+        </div>
+        <div>
+            <p>
+                I’m good chess Player.I <br>have many Victories.I <br>have 10 Years<br> experience in this <br>game.<br>
+                You can see all <br>Victories, Please<br> Click the<br> Certificates Button<br> and <span>See more</span>
+            </p>
+            <div>
+                <a  href="#Certificates">Certificates</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="middlePages">
+        <section>
+            <div>
+                <h3>
+                    <br>G.C.E Ordinary Level<br> Examination<br>
+                </h3>
+                <p>
+                    G/P/De.s Kularathna College
+                </p>
+            </div>
+            <div>
+                <h3>
+                    G.C.E <br>Advanced Level<br> Examination
+                </h3>
+                <p>
+                    G/P/De.s Kularathna College
+                </p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3>
+                    Graduate Diploma <br>in Software Engineering
+                </h3>
+                <p>
+                    Institute of Java Software Engineering<br>(2022-2024)
+                </p>
+            </div>
+            <div>
+                <h3>
+                     Software <br>Engineering <br>Degree
+                </h3>
+                <p>
+                    (2024-2025)
+                </p>
+            </div>
+        </section>
+    </section>
+</section>
+</main>
+</body>
+</html>
