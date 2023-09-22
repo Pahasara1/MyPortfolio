@@ -61,6 +61,12 @@ the modern Professional Softwares">
             font-size: 18px;
             color: hsl(0, 0%, 100%);
             font-family: 'Courier New', Courier, monospace;
+            transition-duration: 0.1s;
+            transition-property: all;
+        }
+        header> nav> ul> li > a:hover{
+            color: #23fff4;
+            font-size: 19px;
         }
 
         main {
@@ -82,7 +88,7 @@ the modern Professional Softwares">
             position: sticky;
             height: 10vh;
             width: 100%;
-            background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+            background: linear-gradient(rgba(255, 102, 0, 0.795),rgb(255, 239, 17));
             top: 70px;
             z-index: 20;
         }
@@ -110,6 +116,24 @@ the modern Professional Softwares">
             bottom: 45%;
             left: 15%;
         }
+        main>section:nth-child(1)>section>h1:nth-child(2){
+            animation-name: anima;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+            position: absolute;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 1000;
+        }
+         @keyframes anima {
+            0%{
+                left: 15%;
+            }
+            50%{
+                left: 30%;
+            }
+        }
+
 
         main>section:nth-child(1)>section>:nth-child(3){
             position: absolute;
@@ -129,6 +153,7 @@ the modern Professional Softwares">
             left: 15%;
             top: 55%;
         }
+
         main>section:nth-child(1)>section>:last-child{
             position: absolute;
             width: 150px;
@@ -169,7 +194,7 @@ the modern Professional Softwares">
             position: sticky;
             height: 10vh;
             width: 100%;
-            background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+            background: linear-gradient(rgba(255, 102, 0, 0.795),rgb(255, 239, 17));
             top: 70px;
             z-index: 20;
         }
@@ -282,7 +307,7 @@ the modern Professional Softwares">
             position: sticky;
             height: 10vh;
             width: 100%;
-            background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+            background: linear-gradient(rgba(255, 102, 0, 0.795),rgb(255, 239, 17));
             top: 70px;
             z-index: 20;
         }
@@ -306,6 +331,12 @@ the modern Professional Softwares">
             width: 30%;
             height: 80%;
             box-shadow: 1px 2px 9px 5px #ff8800;
+            transition-duration: 0.5s;
+            transition-property: all;
+        }
+        main>section:nth-child(3)>section>div:hover{
+            width: 35%;
+            height: 85%;
         }
         main>section:nth-child(3)>section>div:nth-child(1)>h1{
             position: relative;
@@ -379,7 +410,7 @@ the modern Professional Softwares">
             position: sticky;
             height: 10vh;
             width: 100%;
-            background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+            background: linear-gradient(rgba(255, 102, 0, 0.795),rgb(255, 239, 17));
             top: 70px;
             z-index: 20;
         }
@@ -411,11 +442,25 @@ the modern Professional Softwares">
             width: 40%;
             height: 80%;
             box-shadow: 1px 2px 6px 4px #000000;
+            transition-duration: 2s;
+            transition-property: all;
+        }
+        #Projects>div:nth-child(2):hover{
+            width: 60%;
+            height: 100%;
+            transform: rotate(360deg);
         }
         #Projects>div:nth-child(3){
             width: 40%;
             height: 80%;
             box-shadow: 1px 1px 4px 4px #000000;
+            transition-duration: 2s;
+            transition-property: all;
+        }
+        #Projects>div:nth-child(3):hover{
+            width: 60%;
+            height: 100%;
+            transform: rotate(360deg);
         }
         #ButtonNavigate{
             position: absolute;
@@ -475,7 +520,7 @@ the modern Professional Softwares">
             position: sticky;
             height: 10vh;
             width: 100%;
-            background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+            background: linear-gradient(rgba(255, 102, 0, 0.795),rgb(255, 239, 17));
             top: 70px;
             z-index: 20;
         }
@@ -499,6 +544,12 @@ the modern Professional Softwares">
             width: 10%;
             height: 120%;
             box-shadow: 1px 2px 9px 5px #000000;
+            transition-duration: 0.5s;
+            transition-property: all;
+        }
+        main>section:nth-child(5)>section>div:hover{
+            width: 13%;
+            height: 160%;
         }
         main>section:nth-child(5)>p{
             position: absolute;
@@ -536,7 +587,7 @@ the modern Professional Softwares">
             position: sticky;
             height: 10vh;
             width: 100%;
-            background: linear-gradient(rgba(255, 136, 0, 0.795),rgb(252, 214, 2));
+            background: linear-gradient(rgba(255, 102, 0, 0.795),rgb(255, 239, 17));
             top: 70px;
             z-index: 20;
         }
@@ -560,6 +611,12 @@ the modern Professional Softwares">
             width: 24%;
             height: 95%;
             box-shadow: 1px 2px 9px 3px #000000;
+            transition-duration: 0.5s;
+            transition-property: all;
+        }
+        #first>div:hover{
+            width: 30%;
+            height: 150;
         }
         #second{
             position: absolute;
@@ -575,8 +632,13 @@ the modern Professional Softwares">
             width: 24%;
             height: 95%;
             box-shadow: 1px 2px 9px 3px #000000;
+            transition-duration: 0.5s;
+            transition-property: all;
         }
-
+        #second>div:hover{
+            width: 30%;
+            height: 150;
+        }
 
 
 
@@ -709,6 +771,11 @@ the modern Professional Softwares">
             position: absolute;
             top: 25%;
             text-decoration: none;
+            transition-duration: 0.5s;
+            transition-property: all;
+        }
+        #contactRight>aside>div:last-child>a:hover{
+            color: aquamarine;
         }
         #Name{
             position: absolute;
@@ -724,6 +791,12 @@ the modern Professional Softwares">
             position: absolute;
             top: 40%;
             left: 30%;
+        }
+        #messages>textarea{
+            
+        }
+        #messages>textarea:hover{
+            background-color: white;
         }
 
     </style>
