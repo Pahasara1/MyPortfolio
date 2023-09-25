@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -263,6 +264,30 @@
             opacity: 80%;
     }
 
+    @Media all and (max-width: 320px){
+        main>section{
+            height: 180vh;
+        }
+        main>section>div:nth-child(1){
+            display: none;
+        }
+        #Projects>section:nth-child(1){
+            flex-direction: column;
+        }
+        #Projects>section:nth-child(2){
+            flex-direction: column;
+            top: 100%;
+        }
+        #Projects>section:nth-child(1)>div{
+            width: 90%;
+        }
+        #Projects>section:nth-child(2)>div{
+            width: 90%;
+        }
+        #leftRight{
+            display: none;
+        }
+    }
 
 
   </style>

@@ -1,3 +1,5 @@
+Assignment_index.html-----------------------------------------------------------------------------------------------------------------------------------
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -314,6 +316,40 @@
             transition: height 0.5s;
             opacity: 80%;
             background: rgb(0, 0, 0);
+    }
+
+
+
+    /*Media Quaries Started*/
+    @media all and (max-width: 320px){
+        main>section{
+            height: 280vh;
+        }
+        main>section>div:nth-child(1){
+            display: none;
+        }
+        #Assignments>section:nth-child(1){
+            flex-direction: column;
+        }
+        #Assignments>section:nth-child(2){
+            flex-direction: column;
+        }
+        #Assignments>section:nth-child(1)>div {
+            width: 90%;
+            height: 100%;
+        }
+        #Assignments>section:nth-child(2) {
+            width: 95%;
+            height: 45%;
+            top: 170%;
+        }
+        #Assignments>section:nth-child(2)>div{
+            width: 90%;
+            height: 100%;
+        }
+        #leftRight{
+            display: none;
+        }
     }
 
 
