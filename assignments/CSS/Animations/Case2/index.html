@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>animation case 2</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body{
+            background-color: #00134646;
+        }
+        body>div:first-child{
+            position: absolute;
+            margin: auto;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            width: 200px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 100px;
+            animation-name: anima;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            /* animation-direction: alternate; */
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes anima{
+            0%{
+                transform: translate(0,0);
+                box-shadow: 0 0 10px #a8362c, 0 0 20px #a8362c, 0 0 100px #a8362c;
+            }
+            25%{
+                transform: translate(-20px,20px);
+                box-shadow: 0 0 0px #a8362c, 0 0 0px #a8362c, 0 0 0px #a8362c;
+            }
+            50%{
+                transform: translate(0,0);
+                box-shadow: 0 0 10px #a8362c, 0 0 20px #a8362c, 0 0 100px #a8362c;
+            }
+            75%{
+                transform: translate(20px,-20px);
+                box-shadow: 0 0 0px #a8362c, 0 0 0px #a8362c, 0 0 0px #a8362c;
+            }
+            100%{
+                transform: translate(0,0);
+                box-shadow: 0 0 10px #a8362c, 0 0 20px #a8362c, 0 0 100px #a8362c;
+            }
+        }
+        body>div:nth-child(2){
+            position: absolute;
+            margin: auto;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            width: 200px;
+            height: 200px;
+            background-color: #000000;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
