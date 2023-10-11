@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../assets/css/Normalize.css">
+    <style>
+        main {
+            width: 400px;
+            height: 500px;
+            background-color: rgb(0, 0, 0);
+            margin: auto;
+            box-shadow: 0 4px 20px -10px black;
+            border-radius: 20px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 5px;
+        }
+
+        main > section:nth-child(1) {
+            height: 20%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main > section:nth-child(1) > div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        main > section:nth-child(1) > div > div:nth-child(1) {
+            flex-grow: 6;
+            display: flex;
+            flex-direction: column;
+            /*box-shadow: 0px 0px 10px -5px #000000;*/
+            border-radius: 5px;
+        }
+
+        main > section:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) {
+            height: 40px;
+        }
+
+        main > section:nth-child(1) > div > div:nth-child(1) > div:nth-child(2) {
+            height: 60px;
+        }
+
+        main > section:nth-child(1) > div > div:nth-child(1) > div:first-child {
+            align-items: end;
+        }
+
+        main > section:nth-child(1) > div > div:nth-child(1) > div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            position: relative;
+        }
+
+        #old-value, #new-value {
+            text-align: end;
+            margin: 0;
+            position: absolute;
+            right: 20px;
+        }
+
+        main > section:nth-child(1) > div > div:nth-child(2) {
+            flex-grow: 1;
+            background-color: #ffffff;
+            position: relative;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+
+        #clear {
+            height: 80px;
+            width: 50px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px -5px #000000;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            align-self: center;
+            justify-self: center;
+            background-color: #ff0000;
+            color: white;
+        }
+
+        .operators:hover {
+            box-shadow: 0 0 12px 0 #d1ff02;
+        }
+
+        .numbers:hover {
+            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.44);
+
+        }
+
+        #clear:hover {
+            box-shadow: 0 0 12px 0 #ff0000;
+
+        }
+
+        #addition, #division, #multiplication, #subtraction, #equal {
+            background-color: #fbff00;
+        }
+
+        #clear > h1 {
+            text-align: center;
+        }
+
+        main > section:nth-child(2) {
+            height: 80%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /*grid-gap: 5px;*/
+            position: relative;
+            align-items: start;
+            justify-items: center;
+        }
+
+        main > section:nth-child(2) > div {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px -5px #000000;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+
+        main > section:nth-child(2) > div > h1 {
+            margin: auto;
+        }
+
+        #old-value {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div>
+            <div>
+                <div><h1 id="old-value">0</h1></div>
+                <div><h1 id="new-value">0</h1></div>
+            </div>
+            <div>
+                <div id="clear">
+                    <h1>C</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="numbers" id="seven"><h1>7</h1></div>
+        <div class="numbers" id="eight"><h1>8</h1></div>
+        <div class="numbers" id="nine"><h1>9</h1></div>
+        <div class="operators" id="addition"><h1>+</h1></div>
+        <div class="numbers" id="four"><h1>4</h1></div>
+        <div class="numbers" id="five"><h1>5</h1></div>
+        <div class="numbers" id="six"><h1>6</h1></div>
+        <div class="operators" id="subtraction"><h1>-</h1></div>
+        <div class="numbers" id="one"><h1>1</h1></div>
+        <div class="numbers" id="two"><h1>2</h1></div>
+        <div class="numbers" id="three"><h1>3</h1></div>
+        <div class="operators" id="division"><h1>/</h1></div>
+        <div class="numbers" id="full-stop"><h1>.</h1></div>
+        <div class="numbers" id="zero"><h1>0</h1></div>
+        <div class="operators" id="equal"><h1>=</h1></div>
+        <div class="operators" id="multiplication"><h1>*</h1></div>
+    </section>
+</main>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script>
+    let newValue, oldValue, temp, indexOne = -2, count = 0, finalValue;
+    let array = ["=", "-", "*", "/", "+", "."];
+
+    function setValue(oldValue, newValue) {
+        let splitArray;
+        if ("0" === oldValue) {
+            $("#new-value").text(newValue);
+        } else}
